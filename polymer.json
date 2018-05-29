@@ -3,6 +3,8 @@
   "shell": "src/my-app.html",
   "fragments": [
     "src/media-dashboard.html",
+    "src/poly-elem.html",
+    "src/jasper-fileslist.html",
     "src/my-view404.html"
   ],
   "sources": [

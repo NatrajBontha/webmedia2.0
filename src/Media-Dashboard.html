@@ -16,16 +16,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
 <link rel="import" href="../bower_components/paper-dialog-scrollable/paper-dialog-scrollable.html">
-<link rel = "import" href = "../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animation.html">
+
+<link rel="import" href="./jasper-fileslist.html">
+
+<link rel="import" href="./poly-elem.html">
+
 
 <dom-module id="media-dashboard">
   <template>
     <style include="shared-styles">
       :host {
         display: block;
-
         padding: 10px;
       }
 
@@ -33,16 +37,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: inline-flex;
       }
 
-        paper-dialog {
-      width: 75%;
-      min-width: 50vw;
-    }
-    neon-animated-pages {
-      margin: 2em;
-      height: 100%;
-      min-height: 25vh;
-      overflow: auto;
-    }
+      paper-dialog {
+        width: 75%;
+        min-width: 50vw;
+      }
+
+      .fixed {
+        width: 75%;
+        min-width: 50vw;
+      }
+
+      neon-animated-pages {
+        margin: 2em;
+        height: 100%;
+        min-height: 25vh;
+        overflow: auto;
+      }
     </style>
     <div class="inline-flex" hidden>
       <span>Please Rate My Service</span>
@@ -53,20 +63,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader>
     </div>
     <h3>Paper-Icon-Button Example </h3>
-    <paper-icon-button icon = "settings" on-tap="openDialog" ></paper-icon-button>settings
+    <paper-icon-button icon="settings" on-tap="openDialog"></paper-icon-button>settings
     <br>
-    <paper-icon-button icon = "warning" style = "color: red;" ></paper-icon-button>warning
+    <paper-icon-button icon="warning" style="color: red;"></paper-icon-button>warning
     <br>
-    <paper-icon-button icon = "content-cut" ></paper-icon-button>content-cut
+    <paper-icon-button icon="content-cut"></paper-icon-button>content-cut
     <br>
-    <paper-icon-button icon = "dashboard" ></paper-icon-button>dashboard
+    <paper-icon-button icon="dashboard"></paper-icon-button>dashboard
     <br>
-    <paper-icon-button icon = "flight-takeoff" ></paper-icon-button>flight-takeoff
+    <paper-icon-button icon="flight-takeoff"></paper-icon-button>flight-takeoff
     <br>
     <label id="filesUploaded">[[im2File]]</label>
 
-   <div >
-      <paper-dialog id="mdialog" modal >
+    <div>
+      <paper-dialog id="mdialog" modal>
         <h2>Header</h2>
         <paper-dialog-scrollable>
           Lorem ipsum...
@@ -76,9 +86,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <paper-icon-button dialog-confirm autofocus>Accept</paper-icon-button>
         </div>
       </paper-dialog>
-     
-   </div>
-  
+    </div>
+    <div class="fixed">
+      <poly-elem></poly-elem>
+    </div>
+
+    <div class="fixed">
+      <jasper-fileslist></jasper-fileslist>
+    </div>
   </template>
 
   <script>
@@ -113,7 +128,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             value: "Select IM2 File to View:",
             notify: true
           }
-         
+
         };
       }
       _ratingChanged() {
@@ -129,7 +144,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         //console.log("file upload tried" + JSON.stringify(item))
       }
 
-      openDialog(event){
+      openDialog(event) {
         console.log(event);
         this.$.mdialog.open();
       }
