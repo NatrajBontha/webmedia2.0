@@ -1,7 +1,7 @@
 {
-  "name": "My App",
-  "short_name": "My App",
-  "description": "My App description",
+  "name": "Web Media",
+  "short_name": "Web Media",
+  "description": "Web Media description",
   "icons": [
     {
       "src": "images/manifest/icon-192x192.png",

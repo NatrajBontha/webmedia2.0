@@ -1,0 +1,92 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/s-rating/s-rating.html">
+
+<link rel="import" href="../bower_components/d2l-file-uploader/d2l-file-uploader.html">
+
+<dom-module id="media-dashboard">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+
+      .fileUpload {
+        display: inline-flex;
+      }
+    </style>
+    <div class="inline-flex">
+      <span>Please Rate My Service</span>
+      <s-rating value="{{rating}}"></s-rating>
+    </div>
+    <div class="fileUpload">
+      <label>{{labelForSelectIm2File}}</label>
+      <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader>
+    </div>
+
+    <label id="filesUploaded">[[im2File]]</label>
+  </template>
+
+  <script>
+    class MediaDashboard extends Polymer.Element {
+      static get is() {
+        return 'media-dashboard';
+      }
+
+
+      static get properties() {
+        return {
+          rating: {
+            type: Number,
+            readOnly: false,
+            notify: false,
+            value: 3,
+            // Observer method identified by name
+            observer: '_ratingChanged'
+          },
+          im2File: {
+            type: String,
+            readOnly: false,
+            notify: true,
+          },
+          hide: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          labelForSelectIm2File: {
+            type: String,
+            value: "Select IM2 File to View:",
+            notify: true
+          }
+        };
+      }
+      _ratingChanged() {
+        console.log("Rating is Changed = " + this.rating)
+        this.rating = 3;
+      }
+      handleFileAdded(event) {
+        var files = event.detail.files;
+        this.im2File = files[0].name;
+        this.hide = true;
+        this.labelForSelectIm2File = "Selected Im2 File:";
+        console.log(files);
+        //console.log("file upload tried" + JSON.stringify(item))
+      }
+    }
+
+    window.customElements.define(MediaDashboard.is, MediaDashboard);
+  </script>
+</dom-module>
