@@ -12,6 +12,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="shared-styles.html">
 <link rel = "import" href = "../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/vaadin-upload/vaadin-upload.html">
+
 
 <dom-module id="jasper-fileslist">
   <template>
@@ -29,6 +31,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="fixed">
         <h2>Hello [[name]]!</h2>
     </div>
+    <vaadin-upload accept=".pdf">
+      <iron-icon slot="drop-label-icon" icon="description"></iron-icon>
+      <span slot="drop-label">Drop your favourite Novels here (PDF files only)</span>
+    </vaadin-upload>
   </template>
 
   <script>
