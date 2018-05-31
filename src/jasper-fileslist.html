@@ -30,7 +30,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
     <div class="fixed">
-      <h2>Hello [[name]]!</h2>
+      <h2>Hello {{name}}!</h2>
+      <h2> You Scored {{score}} / 10</h2>
     </div>
     <vaadin-upload accept=".pdf">
       <iron-icon slot="drop-label-icon" icon="description"></iron-icon>
@@ -45,7 +46,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       static get properties() {
         return {
-          newprop: {
+          score: {
             type: Number,
             readOnly: false,
             notify: false,
