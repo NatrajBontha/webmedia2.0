@@ -26,12 +26,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
 <dom-module id="media-dashboard">
-  <template>S
+  <template>
     <style include="shared-styles">
       :host {
         display: block;
         padding: 10px;
-        background-color:rgb(54, 56, 66);
+        background-color: rgb(54, 56, 66);
       }
 
       .fileUpload {
@@ -59,22 +59,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <span>Please Rate My Service</span>
       <s-rating value="{{rating}}"></s-rating>
     </div>
+
     <div class="fileUpload">
       <label>{{labelForSelectIm2File}}</label>
       <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader>
     </div>
-    <h3>Paper-Icon-Button Example </h3>
-    <paper-icon-button icon="settings" on-tap="openDialog"></paper-icon-button>settings
-    <br>
-    <paper-icon-button icon="warning" style="color: red;"></paper-icon-button>warning
-    <br>
-    <paper-icon-button icon="content-cut"></paper-icon-button>content-cut
-    <br>
-    <paper-icon-button icon="dashboard"></paper-icon-button>dashboard
-    <br>
-    <paper-icon-button icon="flight-takeoff"></paper-icon-button>flight-takeoff
-    <br>
-    <label id="filesUploaded">[[im2File]]</label>
+
+    <div class="paperIcon" hidden>
+      <h3>Paper-Icon-Button Example </h3>
+      <paper-icon-button icon="settings" on-tap="openDialog"></paper-icon-button>settings
+      <br>
+      <paper-icon-button icon="warning" style="color: red;"></paper-icon-button>warning
+      <br>
+      <paper-icon-button icon="content-cut"></paper-icon-button>content-cut
+      <br>
+      <paper-icon-button icon="dashboard"></paper-icon-button>dashboard
+      <br>
+      <paper-icon-button icon="flight-takeoff"></paper-icon-button>flight-takeoff
+      <br>
+      <label id="filesUploaded">[[im2File]]</label>
+
+    </div>
 
     <div>
       <paper-dialog id="mdialog" modal>
@@ -88,11 +93,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </paper-dialog>
     </div>
-    <div class="fixed">
+
+    <div class="fixed" hidden>
       <poly-elem></poly-elem>
     </div>
 
-    <div class="fixed">
+    <div class="fixed" hidden>
       <jasper-fileslist name="Natraj" score="7"></jasper-fileslist>
     </div>
   </template>
