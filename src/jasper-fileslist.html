@@ -21,7 +21,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       :host {
         display: block;
         padding: 10px;
-       
+        height: 250px;
+        background: var(--app-dialog-content-background-color);
       }
 
       .fixed {
@@ -29,14 +30,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         height: 50px;
         width: 200px;
       }
+
+      .bluebutton {
+        background-color: #92CBC5;
+        border: none;
+        color: rgb(39, 31, 31);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 2px;
+      }
     </style>
     <div class="fixed">
       <h2>Hello {{name}}!</h2>
       <h2> You Scored {{score}} / 10</h2>
     </div>
-    <vaadin-upload accept=".pdf">
+    <!-- <vaadin-upload accept=".im2"  >
       <iron-icon slot="drop-label-icon" icon="description"></iron-icon>
-      <span slot="drop-label">Drop your favourite Novels here (PDF files only)</span>
+      <span slot="drop-label">Drop your Im2 Files Here</span>
+    </vaadin-upload> -->
+
+    <!-- <vaadin-upload id="manualUpload" no-auto></vaadin-upload>
+    <br>
+    <button id="uploadButton">Open</button> -->
+
+    <vaadin-upload id="upload">
+      <button class="bluebutton" slot="add-button">
+        Open
+      </button>
     </vaadin-upload>
   </template>
 
@@ -59,7 +82,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             type: String,
             readOnly: false,
             notify: true,
-            value: "Jasper Files List"
+            value: "Most Recent Files List"
           }
         };
       }

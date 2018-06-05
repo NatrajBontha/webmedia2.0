@@ -108,7 +108,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <app-header slot="header" condenses reveals effects="waterfall">
           <app-toolbar>
             <div class="leftmain" main-title>
-              <paper-icon-button icon="my-icons:arrow-back" ></paper-icon-button>
+              <paper-icon-button icon="arrow-back"  on-tap="openDialog"></paper-icon-button>
             </div>
             <div class="maintitleclass" main-title>
             
@@ -120,6 +120,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
              
             </div>
           </app-toolbar>
+          
         </app-header>
 
         <iron-pages selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main">

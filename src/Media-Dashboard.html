@@ -38,9 +38,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: inline-flex;
       }
 
-      paper-dialog {
-        width: 75%;
+      #mdialog {
+        width: 5%;
         min-width: 50vw;
+        height: 60%;
+        text-align: center;
+        background-color: var(--app-dialog-header-background-color);
+
       }
 
       .fixed {
@@ -48,11 +52,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         min-width: 50vw;
       }
 
-      neon-animated-pages {
-        margin: 2em;
-        height: 100%;
-        min-height: 25vh;
-        overflow: auto;
+      .openIt {
+        position: absolute;
+        right: 0;
+      
       }
     </style>
     <div class="inline-flex" hidden>
@@ -60,7 +63,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <s-rating value="{{rating}}"></s-rating>
     </div>
 
-    <div class="fileUpload">
+    <div class="fileUpload" hidden>
       <label>{{labelForSelectIm2File}}</label>
       <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader>
     </div>
@@ -81,15 +84,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     </div>
 
-    <div>
-      <paper-dialog id="mdialog" modal>
-        <h2>Header</h2>
-        <paper-dialog-scrollable>
-          Lorem ipsum...
-        </paper-dialog-scrollable>
-        <div class="buttons">
-          <paper-icon-button dialog-dismiss>Cancel</paper-icon-button>
-          <paper-icon-button dialog-confirm autofocus>Accept</paper-icon-button>
+    <div class="openIt">
+      <paper-icon-button icon="perm-media" on-tap="openDialog"></paper-icon-button>
+    </div>
+    <div  >
+      <paper-dialog id="mdialog">
+        <h2>Jasper </h2>
+        <h3> Luminator Content Creator 2.0</h3>
+        <div >
+          <jasper-fileslist></jasper-fileslist>
+          <div class="buttons">
+            <paper-icon-button dialog-dismiss>Cancel</paper-icon-button>
+            <paper-icon-button dialog-confirm autofocus>Open</paper-icon-button>
+          </div>
         </div>
       </paper-dialog>
     </div>
@@ -108,8 +115,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       static get is() {
         return 'media-dashboard';
       }
-
-
       static get properties() {
         return {
           rating: {
