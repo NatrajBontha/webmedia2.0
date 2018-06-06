@@ -91,7 +91,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <app-drawer-layout fullbleed narrow="{{narrow}}">
       <!-- Drawer content -->
-      <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
+      <!-- <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
         <app-toolbar >
             <paper-icon-button icon="apps"></paper-icon-button>  
             <paper-icon-button icon="my-icons:menu" ></paper-icon-button>
@@ -100,7 +100,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a name="media-dashboard" href="[[rootpath]]media-dashboard">media</a>
           <a name="media-creator" href="[[rootpath]]media-creator">create</a>
         </iron-selector>
-      </app-drawer>
+      </app-drawer> -->
 
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
@@ -108,7 +108,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <app-header slot="header" condenses reveals effects="waterfall">
           <app-toolbar>
             <div class="leftmain" main-title>
-              <paper-icon-button icon="arrow-back"  on-tap="openDialog"></paper-icon-button>
+              <paper-icon-button icon="apps"  on-tap="openDialog"></paper-icon-button>
+              <paper-icon-button icon="donut-large"  on-tap="openDialog"></paper-icon-button>
             </div>
             <div class="maintitleclass" main-title>
             
