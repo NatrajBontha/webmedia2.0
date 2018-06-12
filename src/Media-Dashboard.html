@@ -19,6 +19,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animation.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/vaadin-upload/vaadin-upload.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 
 <link rel="import" href="./jasper-fileslist.html">
 
@@ -26,12 +29,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
 <dom-module id="media-dashboard">
+    
   <template>
-    <style include="shared-styles">
+     <style include="shared-styles">
       :host {
         display: block;
-        padding: 10px;
-        background-color: rgb(212, 214, 224);
+        padding: 50px;
+        Position: relative;
+        height: 100px;
+                       
       }
 
       .fileUpload {
@@ -43,7 +49,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         min-width: 50vw;
         height: 60%;
         text-align: center;
-        background-color: var(--app-dialog-header-background-color);
+        background-color: #000000;
         color:antiquewhite;
       }
 
@@ -57,16 +63,115 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         right: 0;
       
       }
+
+      OpenPage{
+
+        background: #000000;
+        display: flex;
+        color:antiquewhite;
+        padding: 0;
+        margin: 0;
+
+
+        }
+
+       title{
+         
+         display: block;
+         text-align: center;
+         color:antiquewhite;
+         font-family: sans-serif;
+         font-size: xx-large;
+         height: 100px;
+         
+         }   
+
+      subtitle{
+
+         display: block;
+         text-align: center;
+         color:antiquewhite;
+         font-family: sans-serif;
+         font-size: medium;
+       
+        }    
+
+        h1{
+          color: antiquewhite;
+          font-size: 20px;
+        }
+
+        h2{
+          color: #333333;
+          font-size: 16px;
+
+        }
+       .leftsubtitle{
+         vertical-align: left;
+         color: antiquewhite;
+        
+       }  
+
+  
     </style>
-    <div class="inline-flex" hidden>
+
+<style is="custom-style">
+
+       .ProjectOpen{
+      color: antiquewhite;
+      @apply --layout-vertical;
+      @apply --layout-wrap;
+      @apply --layout-justified;
+      margin-left: 30px;
+     
+          }  
+
+      .newproject {
+            
+      margin-left: 50px;
+      margin-top: 100px;
+      margin-right: auto;
+
+      }
+      
+           .newproject div {
+      @apply --layout-flex;
+    }
+    .Openchild1 {
+      @apply --layout-horizontal;
+      @apply --layout-start-justified;
+      background-color: #353434; 
+      align-items: center;
+    
+
+   }
+
+    .Openchild2 {
+
+      @apply --layout-horizontal;
+      @apply --layout-self-start;
+      font-family: sans-serif;
+      width:500px;
+    
+    }
+    .Openchild3 {
+      @apply --layout-vertical;
+      @apply --layout-self-end;
+         }        
+</style>
+
+
+    <!-- <div class="inline-flex" hidden>
       <span>Please Rate My Service</span>
       <s-rating value="{{rating}}"></s-rating>
-    </div>
+    </div> -->
 
-    <div class="fileUpload" hidden>
+    
+
+    <!-- <div class="fileUpload" hidden>
       <label>{{labelForSelectIm2File}}</label>
       <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader>
-    </div>
+    </div> -->
 
     <div class="paperIcon" hidden>
       <h3>Paper-Icon-Button Example </h3>
@@ -87,13 +192,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="openIt">
       <paper-icon-button icon="perm-media" on-tap="openDialog"></paper-icon-button>
     </div>
+
+    <div class="OpenPage"  >
+      <div>
+      <div class="header" style="background-color: #353434; height: 200px;">
+            <div class="leftsubtitle">
+                <paper-icon-button icon="icons:arrow-back" ></paper-icon-button>
+            </div>
+          <title>Jasper </title>
+           <subtitle> Luminator Content Creator 2.0</subtitle>
+          </div>
+
+           <div class="ProjectOpen" style= "background-color: #1f1e1e"  >
+
+            <div class="newproject"> 
+              <div class= "Openchild1" ><paper-icon-button icon="icons:open-in-new" style="color: antiquewhite;" ></paper-icon-button></div>
+              <div class= "Openchild2" ><h1>Open File</h1></div>
+              <div class= "Openchild3" ><h2>Search and browse a saved project</h2></div>
+
+              <div class= "child1" ><paper-icon-button icon="icons:note-add" style="color: antiquewhite" ></paper-icon-button></div>
+              <div class= "child2" ><h1>Create New File</h1>
+              <div class= "child3" ><h2>Build a new project from scratch</h2></div>
+
+              <div class= "child1" ><paper-icon-button icon="icons:perm-media" style="color: antiquewhite" ></paper-icon-button></div>
+              <div class= "child2" ><h1>Use Template</h1></div>
+              <div class= "child3" ><h2>Choose from pre-built templates</h2></div>
+
+              <div class= "child1" ><paper-icon-button icon="icons:filter-none" style="color: antiquewhite" ></paper-icon-button></div>
+              <div class= "child2" ><h1>Recent Project</h1></div>
+              <div class= "child3" ><h2>Browse from previous projects</h2></div>
+            </div>
+
+          </div>
+         <!-- <label>{{labelForSelectIm2File}}</label>
+         <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader> -->
+    </div>
+
+    </div>
     <div  >
       <paper-dialog id="mdialog">
-        <h2>Jasper </h2>
-        <h3> Luminator Content Creator 2.0</h3>
         <div >
-          <jasper-fileslist></jasper-fileslist>
-          <div class="buttons">
+            <div class="buttons">
             <paper-icon-button dialog-dismiss>Cancel</paper-icon-button>
             <paper-icon-button dialog-confirm autofocus>Open</paper-icon-button>
           </div>
@@ -137,7 +276,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           },
           labelForSelectIm2File: {
             type: String,
-            value: "Select IM2 File to View:",
+            value: "Open Project",
             notify: true
           }
 

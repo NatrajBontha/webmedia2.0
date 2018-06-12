@@ -1,0 +1,54 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="header-footer" >
+
+<template>
+    <style>
+    h1{
+        font-family:  Open Sans;
+        font-size: 30px;
+        color: #9ca4ab;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    h2{
+        font-family:  Open Sans;
+        font-size: 15px;
+        color: #9ca4ab;
+        text-align: center;
+        
+    }
+    </style>
+    <h1>{{header}}</h1>
+    <h2>{{subheader}}</h2>
+
+    <!-- <input type="text" value="{{name}}">
+    <button>Change</button> --> 
+</template>
+
+<script>
+
+        class HeaderFooter extends Polymer.Element {
+            static get is() {return 'header-footer';}
+        
+            static get properties() {
+                return{
+                   header:{
+                    type: String,
+                    value:'JASPER'
+                    },
+
+                    subheader:{
+                    type: String,
+                    value:'Luminator Content Creator 2.0'
+                    }
+
+                }
+            }
+        }
+        window.customElements.define(HeaderFooter.is, HeaderFooter);
+          </script> 
+
+</dom-module>
