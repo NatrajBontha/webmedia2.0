@@ -1,0 +1,49 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="file-list" >
+
+<template>
+    <style>
+        h1{
+          color: antiquewhite;
+          font-size: 16px;
+          font-family: Calibri;
+        }
+
+        h2{
+          color: #626266;
+          font-size: 12px;
+          font-family: Calibri;
+        }
+    </style>
+    <h1> {{title}}</h1>
+    <h2> {{subtitle}}</h2>
+
+    <!-- <input type="text" value="{{name}}">
+    <button>Change</button> --> 
+</template>
+
+<script>
+
+        class Filelist extends Polymer.Element {
+            static get is() {return 'file-list';}
+        
+            static get properties() {
+                return{
+                    title:{
+                    type: String,
+                    value:'title'
+                    },
+
+                    subtitle:{
+                        type:String,
+                        value:'subtitle'
+                    }
+                }
+            }
+        }
+        window.customElements.define(Filelist.is, Filelist);
+          </script> 
+
+</dom-module>
