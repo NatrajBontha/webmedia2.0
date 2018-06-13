@@ -1,17 +1,42 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
 
 <dom-module id="mrufiles-list">
     <template>
-        <style>
+        <style include="shared-styles">
             :host {
                 display: block;
+                background-color:#38393E;
+                color: antiquewhite;
+            }
+
+            paper-listbox {
+                background-color:#38393E;
+            }
+            paper-item{
+                color: white;
             }
         </style>
-        <!-- <h2>Hello [[prop1]]!</h2> -->
-        <div ><paper-icon-button icon="[[icon]]" style="color: antiquewhite" ></paper-icon-button></div>
-          <div ><h1>[[title]]</h1>
-          <div ><h2>[[subtitle]]</h2></div>
+
+        <h1>[[title]]</h1>
+        <div>
+
+
+            <paper-listbox slot="dropdown-content" class="dropdown-content" attr-for-selected="value" fallback-selection="-1" selected="{{item.preMin}}">
+                <template is="dom-repeat" items="[[mruFiles]]">
+                    <paper-item value="[[item]]">
+                        <paper-icon-button icon="[[plusicon]]" style="color: antiquewhite"></paper-icon-button>
+                        <paper-icon-button icon="[[foldericon]]" style="color: antiquewhite"></paper-icon-button>
+                        [[item]]
+                    </paper-item>
+                </template>
+            </paper-listbox>
+        </div>
+        <div>
+
+
     </template>
 
     <script>
@@ -27,23 +52,31 @@
             static get is() { return 'mrufiles-list'; }
             static get properties() {
                 return {
-                    prop1: {
-                        type: String,
-                        value: 'mrufiles-list'
+                    item: {
+                        type: Object
                     },
                     title: {
                         type: String,
-                        value: 'Open File'
+                        value: 'Recent Projects'
                     },
-                    subtitle: {
+                    foldericon: {
                         type: String,
-                        value: 'Search and browse a saved project'
+                        value: 'icons:folder'
                     },
-                    icon: {
+                    plusicon: {
                         type: String,
-                        value: 'icons:note-add'
+                        value: 'icons:add'
+                    },
+                    mruFiles: {
+                        type: Array,
+                        notify: true,
+                        value: ["Clove", "Basil", "Cardamon"],
+                        observer: '_updateMRUFiles'
                     }
                 };
+            }
+            _updateMRUFiles(file) {
+                console.log("Update MRU List" + file)
             }
         }
 
