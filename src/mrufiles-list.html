@@ -8,34 +8,47 @@
         <style include="shared-styles">
             :host {
                 display: block;
-                background-color:#38393E;
-                color: antiquewhite;
+                background-color: #38393E;
+                color: #84898D;
             }
 
             paper-listbox {
-                background-color:#38393E;
+                background-color: #38393E;
             }
-            paper-item{
-                color: white;
+
+            paper-item {
+                color: #CBCCD1;
+            }
+
+            h1 {
+                color: #CBCCD1;
+            }
+
+            .recentProjects {
+                @apply --layout-vertical;
+                @apply --layout-wrap;
+                @apply --layout-justified;
+                margin-left: 5%;
+                margin-top: 0px;
             }
         </style>
+        <div class="recentProjects">
 
-        <h1>[[title]]</h1>
-        <div>
+            <h1>[[title]]</h1>
+            <div>
+                <paper-listbox slot="dropdown-content" class="dropdown-content" attr-for-selected="value" fallback-selection="-1" selected="{{item.preMin}}">
+                    <template is="dom-repeat" items="[[mruFiles]]">
+                        <paper-item value="[[item]]">
+                            <paper-icon-button icon="[[plusicon]]" style="color: antiquewhite"></paper-icon-button>
+                            <paper-icon-button icon="[[foldericon]]" style="color: antiquewhite"></paper-icon-button>
+                            [[item]]
+                        </paper-item>
+                    </template>
+                </paper-listbox>
+            </div>
+            <div>
 
-
-            <paper-listbox slot="dropdown-content" class="dropdown-content" attr-for-selected="value" fallback-selection="-1" selected="{{item.preMin}}">
-                <template is="dom-repeat" items="[[mruFiles]]">
-                    <paper-item value="[[item]]">
-                        <paper-icon-button icon="[[plusicon]]" style="color: antiquewhite"></paper-icon-button>
-                        <paper-icon-button icon="[[foldericon]]" style="color: antiquewhite"></paper-icon-button>
-                        [[item]]
-                    </paper-item>
-                </template>
-            </paper-listbox>
-        </div>
-        <div>
-
+            </div>
 
     </template>
 
