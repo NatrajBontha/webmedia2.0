@@ -83,8 +83,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             readOnly: false,
             notify: true,
             value: "Most Recent Files List"
-          }
+          },
+          mruFiles: {
+          type: Array,
+          notify: true,
+          observer: '_updateMRUFiles'
+        }
         };
+      }
+      _updateMRUFiles(file){
+          console.log("Update MRU List" + file)
       }
     }
 

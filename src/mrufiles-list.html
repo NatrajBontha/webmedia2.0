@@ -1,0 +1,52 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+
+<dom-module id="mrufiles-list">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <!-- <h2>Hello [[prop1]]!</h2> -->
+        <div ><paper-icon-button icon="[[icon]]" style="color: antiquewhite" ></paper-icon-button></div>
+          <div ><h1>[[title]]</h1>
+          <div ><h2>[[subtitle]]</h2></div>
+    </template>
+
+    <script>
+        /**
+         * `mrufiles-list`
+         * 
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class MRUFilesList extends Polymer.Element {
+            static get is() { return 'mrufiles-list'; }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'mrufiles-list'
+                    },
+                    title: {
+                        type: String,
+                        value: 'Open File'
+                    },
+                    subtitle: {
+                        type: String,
+                        value: 'Search and browse a saved project'
+                    },
+                    icon: {
+                        type: String,
+                        value: 'icons:note-add'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(MRUFilesList.is, MRUFilesList);
+    </script>
+</dom-module>
