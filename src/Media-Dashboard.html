@@ -22,6 +22,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 <link rel="import" href="../bower_components/vaadin-upload/vaadin-upload.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../src/hello-world.html">
 
 <link rel="import" href="./jasper-fileslist.html">
 <link rel="import" href="./footer.html">
@@ -175,9 +176,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     </div>
 
-    <div class="openIt">
+    <!-- <div class="openIt">
       <paper-icon-button icon="perm-media" on-tap="openDialog"></paper-icon-button>
-    </div>
+    </div> -->
 
     <div class="OpenPage"  >
       <div>
@@ -206,15 +207,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div ><paper-icon-button icon="icons:subject" style="color: antiquewhite" ></paper-icon-button></div>
               <div ><file-list title="Recent Project" subtitle="SBrowse from previous projects"></file-list> 
 
+                <paper-icon-button dialog-confirm autofocus>Open</paper-icon-button>
+
             </div>
 
+       
+          
           </div>
+
          <!-- <label>{{labelForSelectIm2File}}</label>
          <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader> -->
     </div>
 
     </div>
-    <div  >
+
+    <div class="footer" flex style= "background-color: #0f1011; width: 1200px; text-align: center">
+
+        <hello-world></hello-world>
+    </div>
+    <!-- <div  >
       <paper-dialog id="mdialog">
         <div >
             <div class="buttons">
@@ -223,7 +234,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </div>
         </div>
       </paper-dialog>
-    </div>
+    </div> -->
 
     <div class="fixed" hidden>
       <poly-elem></poly-elem>
