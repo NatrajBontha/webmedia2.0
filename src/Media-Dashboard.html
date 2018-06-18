@@ -45,6 +45,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       .fileUpload {
         display: inline-flex;
+        @apply --layout-vertical-end;
       }
 
       #mdialog {
@@ -52,7 +53,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         min-width: 50vw;
         height: 60%;
         text-align: center;
-        background-color: #000000;
+        background-color: #0f1011;
         color:antiquewhite;
       }
 
@@ -67,14 +68,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       }
 
-      OpenPage{
+      .OpenPage{
 
-        background: #000000;
+        background :#0f1011;
         display: flex;
         color:antiquewhite;
         }
 
-       title{
+       .header{
          
          display: block;
          text-align: center;
@@ -87,9 +88,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
          }   
 
-      subtitle{
+      .subheader{
 
-         display: block;
          text-align: center;
          color:#626266;
          font-family: Calibri;
@@ -97,7 +97,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
        
         }    
 
-        h1{
+        /* h1{
           color: antiquewhite;
           font-size: 16px;
           font-family: Calibri;
@@ -107,21 +107,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           color: #626266;
           font-size: 12px;
           font-family: Calibri;
-        }
+        } */
 
-        hr { 
-          display: block;
-          margin-bottom: 15px;
-          margin-left: 400px;
-          margin-right: 600px;
-          border-style: inset;
-          border-width: 0.5px;
-}
-       .leftsubtitle{
+
+       .leftarrow{
          vertical-align: left;
          color: antiquewhite;
         
        }  
+
+                    
 
   
     </style>
@@ -144,6 +139,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin-right: auto;
 
       }
+
+
       
     </style>
 
@@ -160,7 +157,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader>
     </div> -->
 
-    <div class="paperIcon" hidden>
+    <!-- <div class="paperIcon" hidden>
       <h3>Paper-Icon-Button Example </h3>
       <paper-icon-button icon="settings" on-tap="openDialog"></paper-icon-button>settings
       <br>
@@ -174,7 +171,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <br>
       <label id="filesUploaded">[[im2File]]</label>
 
-    </div>
+    </div> -->
 
     <!-- <div class="openIt">
       <paper-icon-button icon="perm-media" on-tap="openDialog"></paper-icon-button>
@@ -183,18 +180,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="OpenPage"  >
       <div>
       <div class="header" style="background-color: #2b2c2e; height: 150px; width: 1200px; margin-left: 300px">
-            <div class="leftsubtitle">
+            <div class="leftarrow" style="color: red; margin-block-start: 50px">
                 <paper-icon-button icon="icons:arrow-back" ></paper-icon-button>
             </div>
-          <title>JASPER </title>
-          <subtitle> Luminator Content Creator 2.0</subtitle>
+          <header>JASPER </header>
+          <subheader> Luminator Content Creator 2.0</subtheader>
           </div>
 
            <div class="ProjectOpen" style= "background-color: #1f1e1e; width: 1200px; margin-left: 300px"  >
 
             <div class="newproject"> 
-              <div ><paper-icon-button icon="icons:open-in-new" style="color: antiquewhite;" ></paper-icon-button></div>
-              <div ><file-list title="Open Page" subtitle="Search and browse a saved project"></file-list>    
+              <div ><paper-icon-button icon="icons:open-in-new" style="color: antiquewhite; width: 50px" ></paper-icon-button></div>
+              <div ><file-list  title="Open Page" subtitle="Search and browse a saved project"></file-list>    
               </div>
              
               <div ><paper-icon-button icon="icons:note-add" style="color: antiquewhite" ></paper-icon-button></div>
@@ -219,9 +216,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
          <d2l-file-uploader hidden="{{hide}}" on-d2l-file-uploader-files-added="handleFileAdded"></d2l-file-uploader> -->
     </div>
 
+    <vaadin-upload id="upload">
+        <button class="bluebutton" slot="add-button">
+          Open
+        </button>
+      </vaadin-upload>
+
     </div>
 
-    <div class="footer" flex style= "background-color: #0f1011; width: 1200px; text-align: center">
+    <div class="footer" style= "background-color: #0f1011; width: 1200px; text-align: center">
 
         <hello-world></hello-world>
     </div>
@@ -236,13 +239,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </paper-dialog>
     </div> -->
 
-    <div class="fixed" hidden>
-      <poly-elem></poly-elem>
-    </div>
-
-    <div class="fixed" hidden>
-      <jasper-fileslist name="Natraj" score="7"></jasper-fileslist>
-    </div>
   </template>
 
   <script>

@@ -16,9 +16,15 @@
           font-size: 12px;
           font-family: Calibri;
         }
+ 
+        icon{
+            color: antiquewhite;
+        }
+    
     </style>
     <h1> {{title}}</h1>
     <h2> {{subtitle}}</h2>
+    <div>{{icon}}</div>
 
     <!-- <input type="text" value="{{name}}">
     <button>Change</button> --> 
@@ -31,6 +37,7 @@
         
             static get properties() {
                 return{
+
                     title:{
                     type: String,
                     value:'title'
@@ -39,7 +46,12 @@
                     subtitle:{
                         type:String,
                         value:'subtitle'
-                    }
+                    },
+
+                    icon:{
+                        type:String,
+
+                    } 
                 }
             }
         }
