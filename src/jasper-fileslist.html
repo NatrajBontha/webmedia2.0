@@ -19,9 +19,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style include="shared-styles">
       :host {
-        display: block;
-        padding: 10px;
-        height: 250px;
+        display: flex;
         background: var(--app-dialog-content-background-color);
       }
 
@@ -47,20 +45,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <h2>Hello {{name}}!</h2>
       <h2> You Scored {{score}} / 10</h2>
     </div>
-    <!-- <vaadin-upload accept=".im2"  >
-      <iron-icon slot="drop-label-icon" icon="description"></iron-icon>
-      <span slot="drop-label">Drop your Im2 Files Here</span>
-    </vaadin-upload> -->
+  
 
-    <!-- <vaadin-upload id="manualUpload" no-auto></vaadin-upload>
-    <br>
-    <button id="uploadButton">Open</button> -->
-
-    <vaadin-upload id="upload">
+    <!-- <vaadin-upload id="upload">
       <button class="bluebutton" slot="add-button">
         Open
       </button>
-    </vaadin-upload>
+    </vaadin-upload> -->
   </template>
 
   <script>

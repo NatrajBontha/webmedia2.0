@@ -23,7 +23,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/vaadin-upload/vaadin-upload.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 
-<link rel="import" href="./jasper-fileslist.html">
+<link rel="import" href="./jasper-projectoptions.html">
 <link rel="import" href="./mrufiles-list.html">
 <link rel="import" href="./poly-elem.html">
 
@@ -33,15 +33,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style include="shared-styles">
       :host {
-        display: block;
-        padding: 50px;
-        Position: relative;
-        height: 100px;
-
-      }
-
-      .fileUpload {
-        display: inline-flex;
+        display: flex;
+        flex-direction: row;
+        max-width: 60%;
+        align-items: center;
       }
 
       #mdialog {
@@ -83,7 +78,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         @apply --layout-vertical;
         @apply --layout-wrap;
         @apply --layout-justified;
-        margin-left: 30px;
+        margin-left: 130px;
 
       }
 
@@ -145,26 +140,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
 
-    <div class="paperIcon" hidden>
-      <h3>Paper-Icon-Button Example </h3>
-      <paper-icon-button icon="settings" on-tap="openDialog"></paper-icon-button>settings
-      <br>
-      <paper-icon-button icon="warning" style="color: red;"></paper-icon-button>warning
-      <br>
-      <paper-icon-button icon="content-cut"></paper-icon-button>content-cut
-      <br>
-      <paper-icon-button icon="dashboard"></paper-icon-button>dashboard
-      <br>
-      <paper-icon-button icon="flight-takeoff"></paper-icon-button>flight-takeoff
-      <br>
-      <label id="filesUploaded">[[im2File]]</label>
-
-    </div>
-
-    <div class="openIt">
-      <paper-icon-button icon="perm-media" on-tap="openDialog"></paper-icon-button>
-    </div>
-
     <div class="wrapper">
       <header class="header">
           <div >
@@ -179,38 +154,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <section class="content">
         <div class="columns">
           <main class="main">
-              <jasper-fileslist></jasper-fileslist>
+              <jasper-project-options></jasper-project-options>
           </main>
           <aside class="sidebar">
-             
               <div class="fixed">
-                 
                   <mrufiles-list  ></mrufiles-list>
-             
             </div>
           </aside>
         </div>
       </section>
       <footer class="footer">I am Fixed Height Footer</footer>
-    </div>
-   
-    <div>
-      <paper-dialog id="mdialog">
-        <div>
-          <div class="buttons">
-            <paper-icon-button dialog-dismiss>Cancel</paper-icon-button>
-            <paper-icon-button dialog-confirm autofocus>Open</paper-icon-button>
-          </div>
-        </div>
-      </paper-dialog>
-    </div>
-
-    <div class="fixed">
-      <poly-elem></poly-elem>
-    </div>
-
-    <div class="fixed" hidden>
-      <jasper-fileslist name="Natraj" score="7"></jasper-fileslist>
     </div>
   </template>
 
@@ -258,11 +211,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         this.labelForSelectIm2File = "Selected Im2 File:";
         console.log(files);
         //console.log("file upload tried" + JSON.stringify(item))
-      }
-
-      openDialog(event) {
-        console.log(event);
-        this.$.mdialog.open();
       }
     }
 
