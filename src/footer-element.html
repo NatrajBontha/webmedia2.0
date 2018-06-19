@@ -1,24 +1,24 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
-<dom-module id="hello-world" >
+<dom-module id="footer-element" >
 
 <template>
     <style>
     h1{
         font-family: Calibri;
         font-size: 16px;
+        color: antiquewhite;
     }
     </style>
     <h1> {{name}}</h1>
-       <!-- <input type="text" value="{{name}}">
-    <button>Change</button> --> 
+
 </template>
 
 <script>
 
-        class HelloWorld extends Polymer.Element {
-            static get is() {return 'hello-world';}
+        class Footer extends Polymer.Element {
+            static get is() {return 'footer-element';}
         
             static get properties() {
                 return{
@@ -32,7 +32,7 @@
                 }
             }
         }
-        window.customElements.define(HelloWorld.is, HelloWorld);
+        window.customElements.define(Footer.is, Footer);
           </script> 
 
 </dom-module>
