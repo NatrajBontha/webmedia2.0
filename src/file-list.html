@@ -1,33 +1,58 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
 <dom-module id="file-list" >
 
 <template>
     <style>
-        h1{
+     .file-list {
+      @apply --layout-horizontal;
+      @apply --layout-wrap;
+      background-color: aqua
+    }
+
+     .title {
+      @apply --layout-vertical;
+      @apply --layout-wrap;
+      background-color: blue
+    }
+
+    .icon {
+        background-color: blueviolet
+     
+    }
+        
+    h1{
           color: antiquewhite;
           font-size: 16px;
           font-family: Calibri;
-        }
+    }
 
-        h2{
+    h2{
           color: #626266;
           font-size: 12px;
           font-family: Calibri;
-        }
+    }
  
         icon{
             color: antiquewhite;
         }
     
     </style>
-    <h1> {{title}}</h1>
-    <h2> {{subtitle}}</h2>
-    <!-- <div>{{icon}}</div> -->
 
-    <!-- <input type="text" value="{{name}}">
-    <button>Change</button> --> 
+     <div class="file-layout">  
+            <div class="icon">
+        <paper-icon-button icon="{{icon}}" style="color: antiquewhite; widows: 100px; "></paper-icon-button>
+            </div>
+
+            <div class="title">
+                <h1> {{title}}</h1>
+                <h2> {{subtitle}}</h2>
+            </div>
+
+    </div> 
 </template>
 
 <script>
@@ -46,13 +71,37 @@
                     subtitle:{
                         type:String,
                         value:'subtitle'
+                    },
+
+                   icon:{
+                        type: String,
+                        value: 'icons:open-in-new'
+
                     }
 
-                    // icon:{
-                    //     type:icon,
+                //     newicon:{
+                //         type: String,
+                //         value: 'icons:note-add'
+
+                //     },
+
+                //     templateicon:{
+                //         type: String,
+                //         value: 'icons:perm-media'
+
+                //     },
+
+                //     recentprojecticon:{
+                //         type: String,
+                //         value: 'icons:subject'
+
+                //     }
+
+                //     // icon:{
+                //     //     type:icon,
 
 
-                  //  } 
+                //   //  } 
                 }
             }
         }
