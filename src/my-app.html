@@ -29,6 +29,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="my-icons.html">
 
 <link rel="lazy-import" href="media-dashboard.html">
+<link rel="lazy-import" href="main-dashboard.html">
 <link rel="lazy-import" href="poly-elem.html">
 <link rel="lazy-import" href="jasper-fileslist.html">
 <link rel="lazy-import" href="footer.html">
@@ -147,6 +148,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <iron-pages selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main">
           <media-dashboard name="media-dashboard"></media-dashboard>
+          <main-dashboard name="main-dashboard"></main-dashboard>
 
           <my-view404 name="view404"></my-view404>
         </iron-pages>
@@ -189,6 +191,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         // If no page was found in the route data, page will be an empty string.
         // Default to 'media-dashboard' in that case.
         this.page = page || 'media-dashboard';
+        this.page = page || 'main-dashboard';
 
         // Close a non-persistent drawer when the page & route are changed.
         if (!this.$.drawer.persistent) {
