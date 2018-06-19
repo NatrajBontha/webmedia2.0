@@ -1,32 +1,32 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="./file-list.html">
 
 <dom-module id="jasper-project-options">
-        <template>
-                <style>
-                  :host {
-                    display: flex;
-                    min-width: 500px;
-                    min-height: 400px;
-                  }
-                </style>
-                <h2>Hello </h2>
-              </template>
-    <!-- <div ><paper-icon-button icon="icons:note-add" style="color: antiquewhite" ></paper-icon-button></div>
-          <div ><h1>Create New File</h1>
-          <div ><h2>Build a new project from scratch</h2></div>
+    <template>
+        <style>
+            :host {
+                @apply --layout-vertical;
+                @apply --layout-wrap;
+                @apply --layout-justified;
+                margin-left: 5%;
+                margin-top: 0px;
+            }
+        </style>
+        <div>
+            <file-list title="Open File" subtitle="Open a media file" iconshow="icons:open-in-new"></file-list>
+            <file-list title="Create File" subtitle="Open a media file" iconshow="icons:note-add"></file-list>
+            <file-list title="Use Template" subtitle="Open a media file" iconshow="icons:perm-media"></file-list>
+            <file-list title="Recent Projects" subtitle="Open a media file" iconshow="editor:insert-drive-file"></file-list>
 
-          <div ><paper-icon-button icon="icons:perm-media" style="color: antiquewhite" ></paper-icon-button></div>
-          <div ><h1>Use Template</h1></div>
-          <div ><h2>Choose from pre-built templates</h2></div>
+        </div>
+    </template>
 
-          <div ><paper-icon-button icon="icons:filter-none" style="color: antiquewhite" ></paper-icon-button></div>
-          <div ><h1>Recent Project</h1></div>
-          <div ><h2>Browse from previous projects</h2></div> -->
     <script>
-
         class JasperProjectOptions extends Polymer.Element {
-            static get is() { return 'jasper-project-options'; }
+            static get is() {
+                return 'jasper-project-options';
+            }
             static get properties() {
                 return {
                     name: {

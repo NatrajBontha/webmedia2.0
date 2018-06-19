@@ -36,16 +36,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: flex;
         flex-direction: row;
         max-width: 60%;
-        align-items: center;
-      }
-
-      #mdialog {
-        width: 5%;
-        min-width: 50vw;
-        height: 60%;
-        text-align: center;
-        background-color: #000000;
-        color: antiquewhite;
+        
       }
 
       .fixed {
@@ -53,10 +44,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         min-width: 50vw;
       }
 
-      .openIt {
-        position: absolute;
-        right: 0;
-      }
 
       OpenPage {
         background: #000000;
@@ -73,14 +60,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
     <style is="custom-style">
-      .ProjectOpen {
-        color: antiquewhite;
-        @apply --layout-vertical;
-        @apply --layout-wrap;
-        @apply --layout-justified;
-        margin-left: 130px;
-
-      }
+     
 
       title {
         display: block;
@@ -99,71 +79,54 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         font-size: medium;
       }
 
-     
-
       .wrapper {
-        min-height: 100vh;
         background: #ccc;
         display: flex;
         flex-direction: column;
+        margin: 10%;
       }
 
-      .header{
-        background-color: #353434; height: 200px;
+      .header {
+        background-color: #353434;
+        height: 200px;
       }
+
       .footer {
         height: 50px;
         background: #666;
       }
 
-      .content {
-        flex: 1;
-        background: #999;
+      .contentContainer {
         display: flex;
+        background: #999;
         color: #000;
       }
-
-      .columns {
-        display: flex;
-        flex: 1;
-      }
-
-      .main {
-        flex: 1;
-        background: #eee;
-      }
-
-      .sidebar {
-        flex: 1;
-        background: #ccc
-      }
     </style>
-
-
     <div class="wrapper">
       <header class="header">
-          <div >
-              <div class="backicon">
-                <paper-icon-button icon="icons:arrow-back"></paper-icon-button>
-              </div>
-              <title>Jasper </title>
-              <hr width="25%">
-              <subtitle> Luminator Content Creator 2.0</subtitle>
-            </div>
-      </header>
-      <section class="content">
-        <div class="columns">
-          <main class="main">
-              <jasper-project-options></jasper-project-options>
-          </main>
-          <aside class="sidebar">
-              <div class="fixed">
-                  <mrufiles-list  ></mrufiles-list>
-            </div>
-          </aside>
+        <div>
+          <div class="backicon">
+            <paper-icon-button icon="icons:arrow-back"></paper-icon-button>
+          </div>
+          <title>Jasper </title>
+          <hr width="25%">
+          <subtitle> Luminator Content Creator 2.0</subtitle>
         </div>
-      </section>
-      <footer class="footer">I am Fixed Height Footer</footer>
+      </header>
+      <section class="contentContainer">
+        <main class="main">
+            <div class="fixed">
+          <jasper-project-options></jasper-project-options>
+          </div>
+        </main>
+        <aside class="sidebar">
+          <div class="fixed">
+            <mrufiles-list></mrufiles-list>
+          </div>
+        </aside>
+    </div>
+    </section>
+    <footer class="footer">I am Fixed Height Footer</footer>
     </div>
   </template>
 

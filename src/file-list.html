@@ -1,0 +1,74 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+
+<dom-module id="file-list">
+
+    <template>
+        <style>
+            :host {
+                display: flex;
+                background-color: #38393E;
+                color: #84898D;
+            }
+
+            h1 {
+                color: antiquewhite;
+                font-size: 16px;
+                font-family: Calibri;
+            }
+
+            h2 {
+                color: #626266;
+                font-size: 12px;
+                font-family: Calibri;
+            }
+        </style>
+
+
+
+        <div>
+            <paper-icon-button icon="[[iconshow]]" style="color: antiquewhite"></paper-icon-button>
+        </div>
+        <div>
+            <h1> [[title]]</h1>
+            <div>
+                <h2> [[subtitle]]</h2>
+            </div>
+        </div>
+
+    </template>
+
+    <script>
+        class Filelist extends Polymer.Element {
+            static get is() {
+                return 'file-list';
+            }
+
+            static get properties() {
+                return {
+
+                    title: {
+                        type: String,
+                        value: 'title'
+                    },
+
+                    subtitle: {
+                        type: String,
+                        value: 'subtitle'
+                    },
+
+                    iconshow: {
+                        type: String,
+                        value: 'add'
+
+                    }
+                }
+            }
+        }
+        window.customElements.define(Filelist.is, Filelist);
+    </script>
+
+</dom-module>
