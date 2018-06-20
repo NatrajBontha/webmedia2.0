@@ -24,7 +24,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="my-icons.html">
 
 <link rel="lazy-import" href="media-dashboard.html">
-<link rel="lazy-import" href="Media-CreatorPanel.html">
+<link rel="lazy-import" href="media-creator.html">
 <link rel="lazy-import" href="main-dashboard.html">
 <link rel="lazy-import" href="poly-elem.html">
 <link rel="lazy-import" href="jasper-fileslist.html">
@@ -100,7 +100,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
     </app-location>
 
-    <app-route route="{{route}}" pattern="media-deshboard:page" data="{{routeData}}" tail="{{subroute}}">
+    <app-route route="{{route}}" pattern="main-deshboard:page" data="{{routeData}}" tail="{{subroute}}">
     </app-route>
    
 
@@ -116,6 +116,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a name="media-creator" href="[[rootpath]]media-creator">create</a>
         </iron-selector>
       </app-drawer> -->
+
 
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
@@ -142,6 +143,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <iron-pages selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main">
           <media-dashboard name="media-dashboard"></media-dashboard>
           <media-creator name="media-creator"></media-creator>
+          <main-dashboard name="main-dashboard"></main-dashboard>
           <my-view404 name="view404"></my-view404>
         </iron-pages>
       </app-header-layout>
@@ -187,7 +189,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       _routePageChanged(page) {
         // If no page was found in the route data, page will be an empty string.
         // Default to 'media-dashboard' in that case.
-        this.page = page || 'media-dashboard' || 'media-creator';
+        this.page = page || 'media-dashboard' || 'media-creator' || 'main-dashboard';
         console.log(this.page);
         // Close a non-persistent drawer when the page & route are changed.
         if (!this.$.drawer.persistent) {

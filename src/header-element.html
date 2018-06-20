@@ -72,8 +72,10 @@
         class HeaderElement extends Polymer.Element {
             static get is() {return 'header-element';}
 
-    backarrow() {
-        window.open('https://stackoverflow.com', '_blank');
+     backarrow() {
+
+        // this.set('route.path', '/main-dashboard');
+     window.open('http://127.0.0.1:8081/Main-Dashboard', '_blank');
       }
         
             static get properties() {
