@@ -25,6 +25,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="./jasper-projectoptions.html">
 <link rel="import" href="./header-element.html">
+<link rel="import" href="./footer-element.html">
 <link rel="import" href="./mrufiles-list.html">
 <link rel="import" href="./poly-elem.html">
 
@@ -123,8 +124,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div class="fixed">
             <mrufiles-list></mrufiles-list>
           </div>
+
+          <div class="file upload">
+            <vaadin-upload id="upload">
+              <button class="bluebutton" slot="add-button">
+                Open
+              </button>
+            </vaadin-upload>
+          </div>
+
         </aside>
       </section>
+      </div>
+      <div class="footer" style= "background-color: rgb(0, 0, 0); width: 1200px; text-align: center; color: antiquewhite">
+        <footer-element></footer-element>
+
       </div>
   </template>
 
