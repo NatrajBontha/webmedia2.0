@@ -34,7 +34,7 @@
         </style>
         <div class="recentProjects">
 
-            <h1>[[title]]</h1>
+            <h2>[[title]]</h2>
             <div>
                 <paper-listbox slot="dropdown-content" class="dropdown-content" attr-for-selected="value" fallback-selection="-1" selected="{{item.preMin}}">
                     <template is="dom-repeat" items="[[mruFiles]]">
@@ -85,7 +85,7 @@
                     mruFiles: {
                         type: Array,
                         notify: true,
-                        value: ["Clove", "Basil", "Cardamon"],
+                        value: ["Manhattan_Uptown_3_Routeladder", "GrandCentral_Station_Platform_TFT", "GrandCentral_Station2_Platform_TFT"],
                         observer: '_updateMRUFiles'
                     }
                 };

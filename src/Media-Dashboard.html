@@ -78,6 +78,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         background: #666;
       }
 
+      hr {
+       text-align: center;
+       border:3;
+       color: #353434;
+        width:25%;
+      }
 
       .contentContainer {
         display: flex;
@@ -89,12 +95,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         flex-direction: row;
       }
 
-      .contentContainer > main {
+      .contentContainer>main {
         flex: 1;
         background-color: #38393E;
       }
 
-      .contentContainer > aside {
+      .contentContainer>aside {
         flex: 1;
         background-color: #38393E;
       }
@@ -104,17 +110,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="backicon">
           <paper-icon-button icon="icons:arrow-back"></paper-icon-button>
         </div>
-        <title>Jasper </title>
-        <hr width="25%">
+        <title>JASPER </title>
+        <hr  >
         <subtitle> Luminator Content Creator 2.0</subtitle>
       </header>
       <section class="contentContainer">
-        <main >
+        <main>
           <div class="fixed">
             <jasper-project-options></jasper-project-options>
           </div>
         </main>
-        <aside >
+        <aside>
           <div class="fixed">
             <mrufiles-list></mrufiles-list>
           </div>
@@ -131,43 +137,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       static get properties() {
         return {
-          rating: {
-            type: Number,
-            readOnly: false,
-            notify: false,
-            value: 3,
-            // Observer method identified by name
-            observer: '_ratingChanged'
-          },
-          im2File: {
-            type: String,
-            readOnly: false,
-            notify: true,
-          },
           hide: {
             type: Boolean,
             value: false,
             notify: true
-          },
-          labelForSelectIm2File: {
-            type: String,
-            value: "Open Project",
-            notify: true
           }
-
         };
-      }
-      _ratingChanged() {
-        console.log("Rating is Changed = " + this.rating)
-        this.rating = 3;
-      }
-      handleFileAdded(event) {
-        var files = event.detail.files;
-        this.im2File = files[0].name;
-        this.hide = true;
-        this.labelForSelectIm2File = "Selected Im2 File:";
-        console.log(files);
-        //console.log("file upload tried" + JSON.stringify(item))
       }
     }
 
