@@ -3,6 +3,7 @@
   "shell": "src/my-app.html",
   "fragments": [
     "src/media-dashboard.html",
+    "src/media-creatorpanel.html",
     "src/poly-elem.html",
     "src/jasper-fileslist.html",
     "src/mrufiles-list.html",
