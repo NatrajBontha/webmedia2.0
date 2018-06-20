@@ -3,6 +3,7 @@
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
+
 <dom-module id="header-element" >
 
 <template>
@@ -49,7 +50,7 @@
       <div class="header">
             <div class="backarrow">
            
-                    <paper-icon-button icon="{{backarrowicon}}" style="color: antiquewhite; "></paper-icon-button>
+                    <paper-icon-button raised on-click="backarrow" icon="{{backarrowicon}}" style="color: antiquewhite; "></paper-icon-button>
         
                  </div>
 
@@ -70,6 +71,10 @@
 
         class HeaderElement extends Polymer.Element {
             static get is() {return 'header-element';}
+
+    backarrow() {
+        window.open('https://stackoverflow.com', '_blank');
+      }
         
             static get properties() {
                 return{
@@ -90,8 +95,7 @@
 
                     },
 
-                    
-                    
+                  
                 }
             }
         }
