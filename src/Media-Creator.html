@@ -23,27 +23,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <dom-module id="media-creator">
   <template>
-    <style include="shared-styles">
+    <style>
       :host {
         display: block;
-        padding: 10px;
-        background-color: rgb(54, 56, 66);
-      }
 
-      .fileUpload {
-        display: inline-flex;
-      }
-
-      paper-dialog {
-        width: 75%;
-        min-width: 50vw;
-      }
-
-      .fixed {
-        width: 75%;
-        min-width: 50vw;
+        padding: 10px 20px;
       }
     </style>
+
+    Oops you hit a 404. <a href="[[rootPath]]">Head back to home.</a>
+  </template>
     <script>
       class MediaCreator extends Polymer.Element {
         static get is() {
@@ -56,7 +45,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               value: "Media Creator",
               notify: true,
               
-            }
+            },
+            rootPath: String,
           }
         }
       }
