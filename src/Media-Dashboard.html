@@ -24,6 +24,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 
 <link rel="import" href="./jasper-projectoptions.html">
+<link rel="import" href="./header-element.html">
 <link rel="import" href="./mrufiles-list.html">
 <link rel="import" href="./poly-elem.html">
 
@@ -107,12 +108,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
     <div>
       <header>
-        <div class="backicon">
+        <!-- <div class="backicon">
           <paper-icon-button icon="icons:arrow-back"></paper-icon-button>
-        </div>
-        <title>JASPER </title>
-        <hr  >
-        <subtitle> Luminator Content Creator 2.0</subtitle>
+        </div> -->
+        <header-element title="JASPER" subtitle="Luminator Content Creator 2.0" ></header-element> 
       </header>
       <section class="contentContainer">
         <main>
@@ -126,8 +125,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </div>
         </aside>
       </section>
-      <footer class="footer">I am Fixed Height Footer</footer>
-    </div>
+      </div>
   </template>
 
   <script>

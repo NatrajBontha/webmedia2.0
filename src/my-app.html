@@ -27,6 +27,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="lazy-import" href="Media-CreatorPanel.html">
 <link rel="lazy-import" href="poly-elem.html">
 <link rel="lazy-import" href="jasper-fileslist.html">
+<link rel="lazy-import" href="footer-element.html">
 <link rel="lazy-import" href="mrufiles-list.html">
 <link rel="lazy-import" href="my-view404.html">
 
@@ -81,6 +82,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: black;
         font-weight: bold;
       }
+
+      bottom{
+          
+          color: antiquewhite;
+          position: absolute;
+          bottom: 0px;
+          height: 60px;
+          vertical-align: center;
+          text-align: center;
+          @apply --layout-justified-end;
+          }
+
     </style>
 
     <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
@@ -132,6 +145,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </iron-pages>
       </app-header-layout>
     </app-drawer-layout>
+
+    <div class="bottom">
+      <footer-element></footer-element>
+  </div>
+
   </template>
 
   <script>
