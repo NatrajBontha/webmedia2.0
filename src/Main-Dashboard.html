@@ -1,0 +1,199 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/s-rating/s-rating.html">
+
+<link rel="import" href="../bower_components/d2l-file-uploader/d2l-file-uploader.html">
+
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-dialog-scrollable/paper-dialog-scrollable.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/neon-animation/neon-animation.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/vaadin-upload/vaadin-upload.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../src/hello-world.html">
+
+<link rel="import" href="./jasper-fileslist.html">
+<link rel="import" href="./header-element.html">
+<link rel="import" href="./footer-element.html">
+<link rel="import" href="./file-list.html">
+
+<link rel="import" href="./poly-elem.html">
+
+
+<dom-module id="main-dashboard">
+    
+  <template>
+     <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 50px;
+        Position: relative;
+        height: 100px;
+                       
+      }
+
+      .fileUpload {
+        display: inline-flex;
+        @apply --layout-vertical-end;
+      }
+
+      #mdialog {
+        width: 5%;
+        min-width: 50vw;
+        height: 60%;
+        text-align: center;
+        background-color: #0f1011;
+        color:antiquewhite;
+      }
+
+      .fixed {
+        width: 75%;
+        min-width: 50vw;
+      }
+
+      .openIt {
+        position: absolute;
+        right: 0;
+      
+      }
+
+      .OpenPage{
+
+        background :#0f1011;
+        display: flex;
+        color:antiquewhite;
+        }
+
+     
+       .leftarrow{
+
+         vertical-align: left;
+         margin-left: 100px;
+         margin-top: 10px;
+
+       }  
+
+                    
+  
+    </style>
+
+<style is="custom-style" include="iron-flex">
+
+       .ProjectOpen{
+      color: antiquewhite;
+      @apply --layout-vertical;
+      @apply --layout-wrap;
+      @apply --layout-justified;
+      margin-left: 30px;
+     
+          }  
+
+      .newproject {
+            
+      margin-left: 50px;
+      margin-top: 20px;
+      margin-right: auto;
+
+      }
+
+
+      
+    </style>
+
+ <div>Hello</div>
+
+    <div class="OpenPage"  >
+      <div>
+      <div class="header" style="background-color: #2b2c2e; height: 150px; width: 1200px; margin-left: 300px">
+            <div class="leftarrow">
+                <paper-icon-button icon="icons:arrow-back" ></paper-icon-button>
+            </div>
+         <header-element title="GRANAITE SUITE"></header-element> 
+            </div>
+
+           <div class="ProjectOpen" style= "background-color: #1f1e1e; width: 1200px; margin-left: 300px"  >
+
+                   
+          
+          </div>
+
+    
+    </div>
+
+
+
+    </div>
+
+    <div class="footer" style= "background-color: #0f1011; width: 1200px; text-align: center; color: antiquewhite">
+      <footer-element name= "Do not have an account assigned by your work, or need help? Contact Support"></footer-element>
+    </div>
+ 
+  </template>
+
+  <script>
+    class MainDashboard extends Polymer.Element {
+      static get is() {
+        return 'main-dashboard';
+      }
+      static get properties() {
+        return {
+          rating: {
+            type: Number,
+            readOnly: false,
+            notify: false,
+            value: 3,
+            // Observer method identified by name
+            observer: '_ratingChanged'
+          },
+          im2File: {
+            type: String,
+            readOnly: false,
+            notify: true,
+          },
+          hide: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          labelForSelectIm2File: {
+            type: String,
+            value: "Open Project",
+            notify: true
+          }
+
+        };
+      }
+      _ratingChanged() {
+        console.log("Rating is Changed = " + this.rating)
+        this.rating = 3;
+      }
+      handleFileAdded(event) {
+        var files = event.detail.files;
+        this.im2File = files[0].name;
+        this.hide = true;
+        this.labelForSelectIm2File = "Selected Im2 File:";
+        console.log(files);
+        //console.log("file upload tried" + JSON.stringify(item))
+      }
+
+      openDialog(event) {
+        console.log(event);
+        this.$.mdialog.open();
+      }
+    }
+
+    window.customElements.define(MainDashboard.is, MainDashboard);
+  </script>
+</dom-module>

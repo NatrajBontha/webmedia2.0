@@ -1,0 +1,101 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<dom-module id="header-element" >
+
+<template>
+    <style include="iron-flex iron-flex-alignment">
+
+     .header {
+      /* @apply --layout-horizontal; */
+      /* @apply --layout-wrap; */
+       @apply --layout-justified; 
+      
+    
+    }
+
+    .backarrow{
+
+       
+        @apply --layout-self-center
+        
+    }
+
+    .flexchild{
+   
+        @apply --layout-self-center
+     
+    }
+        h1{
+         display: block;
+         text-align: center;
+         color:antiquewhite;
+         font-family: Calibri;
+         font-size: 32px;
+        margin-top: 0px;
+        }
+
+        h2{
+        text-align: center;
+         color:#626266;
+         font-family: Calibri;
+         font-size: medium;
+        }
+
+    </style>
+
+      <div class="header">
+            <div class="backarrow">
+           
+                    <paper-icon-button icon="{{backarrowicon}}" style="color: antiquewhite; "></paper-icon-button>
+        
+                 </div>
+
+        <div class="flexchild" >
+            
+        <h1> {{title}}</h1> 
+        <hr width=25% style="color:#626266 "> 
+        <h2> {{subtitle}}</h2>
+
+        </div>
+    </div>
+
+
+        </div>
+</template>
+
+<script>
+
+        class HeaderElement extends Polymer.Element {
+            static get is() {return 'header-element';}
+        
+            static get properties() {
+                return{
+
+                    title:{
+                    type: String,
+                    value:'title'
+                    },
+
+                    subtitle:{
+                        type:String,
+                        value:'subtitle'
+                    },
+
+                    backarrowicon:{
+                        type: String,
+                        value: 'icons:arrow-back'
+
+                    },
+
+                    
+                    
+                }
+            }
+        }
+        window.customElements.define(HeaderElement.is, HeaderElement);
+          </script> 
+
+</dom-module>
