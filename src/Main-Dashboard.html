@@ -31,46 +31,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="./poly-elem.html">
 
 <dom-module id="main-dashboard">
-    
+
   <template>
-     <style include="shared-styles">
+    <style include="shared-styles">
       :host {
         display: block;
-        padding: 50px;
-        Position: relative;
-        height: 100px;
-                       
+
+
       }
 
+      .bg {
+        background-image: url("../images/granites.jpg")  ;
+        height: 1000px;
+       padding: 0%;
+        margin: 0%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
     </style>
 
-<style is="custom-style" include="iron-flex">
 
-    </style>
+    <div class="bg"></div>
 
- <div>Hello</div>
 
-    <div class="mainPage"  >
-      <div>
-      <div class="header" style="background-color: #2b2c2e; height: 150px; width: 1200px; margin-left: 300px">
-            <div class="leftarrow">
-                <paper-icon-button icon="icons:arrow-back" ></paper-icon-button>
-            </div>
-         <header-element title="GRANAITE SUITE"></header-element> 
-            </div>
-
-           <div class="ProjectOpen" style= "background-color: #1f1e1e; width: 1200px; margin-left: 300px"  >
-
-          </div>
-
-    </div>
-
-    </div>
-
-    <div class="footer" style= "background-color: #0f1011; width: 1200px; text-align: center; color: antiquewhite">
-      <footer-element name= "Do not have an account assigned by your work, or need help? Contact Support"></footer-element>
-    </div>
- 
   </template>
 
   <script>

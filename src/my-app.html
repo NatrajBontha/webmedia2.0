@@ -69,12 +69,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         line-height: 40px;
       }
 
-      .maintitleclass {
+      .righttoolbar {
         text-align: right;
         vertical-align: center;
       }
 
-      .leftmain {
+      .lefttoolbar {
         text-align: left;
         vertical-align: center;
       }
@@ -84,25 +84,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         font-weight: bold;
       }
 
-      bottom{
-          
-          color: antiquewhite;
-          position: absolute;
-          bottom: 0px;
-          height: 60px;
-          vertical-align: center;
-          text-align: center;
-          @apply --layout-justified-end;
-          }
+      .nolinkcolor {
+        color: white;
+        background-color: black;
+      }
 
+      bottom {
+
+        color: antiquewhite;
+        position: absolute;
+        bottom: 0px;
+        height: 60px;
+        vertical-align: center;
+        text-align: center;
+        @apply --layout-justified-end;
+      }
     </style>
 
     <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
     </app-location>
 
-    <app-route route="{{route}}" pattern="main-deshboard:page" data="{{routeData}}" tail="{{subroute}}">
+    <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}">
     </app-route>
-   
+
     <app-drawer-layout fullbleed narrow="{{narrow}}">
       <!-- Drawer content -->
       <!-- <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
@@ -119,23 +123,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
 
-        <app-header slot="header" condenses reveals effects="waterfall">
-          <app-toolbar>
-            <div class="leftmain" main-title>
-              <paper-icon-button icon="apps"  on-tap="openDialog"></paper-icon-button>
-              <paper-icon-button icon="donut-large"  on-tap="openDialog"></paper-icon-button>
-            </div>
-            <div class="maintitleclass" main-title>
-            
-              <paper-icon-button icon="search" ></paper-icon-button>
-              <paper-icon-button icon="cloud" ></paper-icon-button>
-              <paper-icon-button icon="help" ></paper-icon-button>
-              <paper-icon-button icon="settings" ></paper-icon-button>
-              <paper-icon-button icon="perm-identity" ></paper-icon-button>
-             
-            </div>
+        <app-header reveals>
+          <app-toolbar >
+            <a href="/main-dashboard" >
+              <paper-icon-button icon="apps" class="nolinkcolor"></paper-icon-button>
+            </a>
+            <a href="/media-dashboard" >
+              <paper-icon-button icon="donut-large" class="nolinkcolor"></paper-icon-button>
+            </a>
+
+            <div main-title> </div>
+
+            <paper-icon-button icon="search"></paper-icon-button>
+            <paper-icon-button icon="cloud"></paper-icon-button>
+            <paper-icon-button icon="help"></paper-icon-button>
+            <paper-icon-button icon="settings"></paper-icon-button>
+            <paper-icon-button icon="perm-identity"></paper-icon-button>
           </app-toolbar>
-          
+
         </app-header>
 
         <iron-pages selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main">
@@ -149,7 +154,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <div class="bottom">
       <footer-element></footer-element>
-  </div>
+    </div>
 
   </template>
 
@@ -190,9 +195,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         this.page = page || 'media-dashboard' || 'media-creator' || 'main-dashboard';
         console.log(this.page);
         // Close a non-persistent drawer when the page & route are changed.
-        if (!this.$.drawer.persistent) {
-          this.$.drawer.close();
-        }
+        // if (!this.$.drawer.persistent) {
+        //   this.$.drawer.close();
+        //}
       }
 
       _pageChanged(page) {
@@ -208,6 +213,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       _showPage404() {
         this.page = 'view404';
       }
+
+      srchandler() {
+        console.log('Search clicked');
+      }
+
     }
 
     window.customElements.define(MyApp.is, MyApp);
