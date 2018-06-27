@@ -19,6 +19,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!-- 
 <link rel="import" href="./jasper-fileslist.html">
 <link rel="import" href="./poly-elem.html"> -->
+<link rel="import" href="./lefteditpanel-element.html">
 
 <dom-module id="media-creator">
   <template>
@@ -28,9 +29,82 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         padding: 10px 20px;
       }
+
+            .contentContainer {
+        display: flex;
+        background-color: #38393E;
+        color: #000;
+        width: 100%;
+        min-width: 1000px;
+        min-height:400px;
+        align-items: stretch;
+        flex-direction: row;
+        padding-top:50px;
+      }
+
+      .contentContainer>main {
+        flex: 1;
+        background-color: #38393E;
+      }
+
+      .contentContainer>aside {
+        flex: 1;
+        background-color: red;
+        flex-direction: column;
+        @apply --layout-vertical;
+        @apply --layout-wrap;
+        @apply --layout-justified;
+      }
+
+      .fixed{
+        min-height:300px;
+      }
+
+      .aside{
+
+        flex: 1;
+        background-color: red;
+        flex-direction: column;
+        @apply --layout-vertical;
+        @apply --layout-wrap;
+        @apply --layout-justified;
+      }
+
+      .ProjectName{
+
+        flex:1
+      }
     </style>
 
     Oops you hit a 404. <a href="[[rootPath]]">Head back to home.</a>
+
+    <section class="contentContainer">
+
+      <div class="aside">       
+        
+        <lefteditpanel-element iconshow="communication:rss-feed"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:perm-media"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:query-builder"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="editor:text-fields"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:font-download"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:room"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:visibility-off"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:theaters"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:event"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:theaters"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:theaters"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:theaters"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:theaters"></lefteditpanel-element>
+      
+      </div>
+
+      <div Class="ProjectName">
+       project name
+      </div>
+
+        </section>
+
+   
   </template>
     <script>
       class MediaCreator extends Polymer.Element {
@@ -45,7 +119,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               notify: true,
               
             },
+
             rootPath: String,
+
+            
           }
         }
       }
