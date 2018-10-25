@@ -1,0 +1,53 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="./file-list.html">
+
+<dom-module id="jasper-project-options">
+    <template>
+        <style>
+            :host {
+                @apply --layout-vertical;
+                @apply --layout-wrap;
+                @apply --layout-justified;
+                margin-left: 5%;
+                margin-top: 0px;
+            }
+        </style>
+        <div>
+            <file-list title="Open File" subtitle="Search and browse a saved project" iconshow="icons:open-in-new"></file-list>
+            <file-list title="Create File" subtitle="Build a new project from scratch" iconshow="icons:note-add"></file-list>
+            <file-list title="Use Template" subtitle="Choose from a pre-built templates" iconshow="icons:perm-media"></file-list>
+            <file-list title="Recent Projects" subtitle="Browse from previous projects" iconshow="icons:picture-in-picture"></file-list>
+        </div>
+    </template>
+
+    <script>
+        class JasperProjectOptions extends Polymer.Element {
+            static get is() {
+                return 'jasper-project-options';
+            }
+            static get properties() {
+                return {
+                    name: {
+                        type: String,
+                        value: 'jasper-project-options'
+                    },
+                    title: {
+                        type: String,
+                        value: 'Open File'
+                    },
+                    subtitle: {
+                        type: String,
+                        value: 'Search and browse a saved project'
+                    },
+                    icon: {
+                        type: String,
+                        value: 'media'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(JasperProjectOptions.is, JasperProjectOptions);
+    </script>
+</dom-module>

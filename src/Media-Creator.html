@@ -1,0 +1,155 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-dialog-scrollable/paper-dialog-scrollable.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
+<link rel="import" href="../bower_components/iron-icons/editor-icons.html">
+<link rel="import" href="../bower_components/iron-icons/image-icons.html">
+<link rel="import" href="../bower_components/iron-icons/Notification-icons.html">
+<link rel="import" href="../bower_components/iron-icons/maps-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/neon-animation/neon-animation.html">
+
+
+<!-- 
+<link rel="import" href="./jasper-fileslist.html">
+<link rel="import" href="./poly-elem.html"> -->
+<link rel="import" href="./lefteditpanel-element.html">
+communication-icons
+<dom-module id="media-creator">
+  <template>
+    <style>
+      :host {
+        display: block;
+
+        padding: 10px 20px;
+      }
+
+            .contentContainer {
+        display: flex;
+        background-color: #38393E;
+        color: #000;
+        width: 100%;
+        min-width: 1000px;
+        min-height:400px;
+        align-items: stretch;
+        flex-direction: row;
+        padding-top:50px;
+      }
+
+      .contentContainer>main {
+        flex: 1;
+        background-color: #38393E;
+      }
+
+      .contentContainer>aside {
+        flex: 1;
+        background-color: red;
+        flex-direction: column;
+        @apply --layout-vertical;
+        @apply --layout-wrap;
+        @apply --layout-justified;
+      }
+
+      .fixed{
+        min-height:300px;
+      }
+
+      .aside{
+
+        flex: 1;
+        background-color: red;
+        flex-direction: column;
+        @apply --layout-vertical;
+        @apply --layout-wrap;
+        @apply --layout-justified;
+      }
+
+      .ProjectName{
+
+        flex:1;
+        color: antiquewhite;
+        @apply --layout-wrap;
+        @apply --layout-justified-start;
+
+      }
+    </style>
+
+    Oops you hit a 404. <a href="[[rootPath]]">Head back to home.</a>
+
+    <section class="contentContainer">
+
+      <div class="asideup">       
+        
+        <lefteditpanel-element iconshow="maps:navigation" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="image:photo" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:perm-media"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:font-download"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="editor:text-fields" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:theaters"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="communication:rss-feed" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:query-builder"></lefteditpanel-element>
+       
+        
+        
+       
+        <lefteditpanel-element iconshow="maps:pin-drop" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="image:timelapse" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:event"></lefteditpanel-element>        
+        <lefteditpanel-element iconshow="notification:event-available" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="image:looks-5" style="color: antiquewhite"></lefteditpanel-element>
+        <lefteditpanel-element iconshow="icons:visibility-off"></lefteditpanel-element>
+        
+      
+      </div>
+
+     
+
+      <div class="slideshow">
+          <iron-image alt="Big Mac" src="../images/001_BigMac.png"></iron-image>
+      </div>
+
+      <div Class="ProjectName">
+     GrandCentral_Station_Platform_TFT
+      </div>
+
+        </section>
+
+   
+  </template>
+    <script>
+      class MediaCreator extends Polymer.Element {
+        static get is() {
+          return 'media-creator';
+        }
+        static get properties() {
+          return {
+            prop1: {
+              type: String,
+              value: "Media Creator",
+              notify: true,
+              
+            },
+
+            rootPath: String,
+
+            
+          }
+        }
+      }
+
+      window.customElements.define(MediaCreator.is, MediaCreator);
+    </script>
+</dom-module>

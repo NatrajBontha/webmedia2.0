@@ -1,0 +1,36 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="footer-element" >
+
+<template>
+    <style>
+    h1{
+        font-family: Calibri;
+        font-size: 16px;
+        color: antiquewhite;
+    }
+    </style>
+    <h1> {{name}} <font color= #3ac2da>Contact Support </font></h1>
+
+</template>
+
+<script>
+
+        class Footer extends Polymer.Element {
+            static get is() {return 'footer-element';}
+        
+            static get properties() {
+                return{
+                    name:{
+                    type: String,
+                    value:'Do not have an account assigned by your work, or need help? '
+                    }
+
+                }
+            }
+        }
+        window.customElements.define(Footer.is, Footer);
+          </script> 
+
+</dom-module>

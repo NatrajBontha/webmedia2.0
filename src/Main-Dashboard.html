@@ -10,57 +10,69 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/s-rating/s-rating.html">
 
+<link rel="import" href="../bower_components/d2l-file-uploader/d2l-file-uploader.html">
 
 <link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
 <link rel="import" href="../bower_components/paper-dialog-scrollable/paper-dialog-scrollable.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animation.html">
-<!-- 
-<link rel="import" href="./jasper-fileslist.html">
-<link rel="import" href="./poly-elem.html"> -->
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/vaadin-upload/vaadin-upload.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 
-<dom-module id="media-creator">
+<link rel="import" href="./jasper-fileslist.html">
+<link rel="import" href="./header-element.html">
+<link rel="import" href="./footer-element.html">
+<link rel="import" href="./file-list.html">
+
+<link rel="import" href="./poly-elem.html">
+
+<dom-module id="main-dashboard">
+
   <template>
     <style include="shared-styles">
       :host {
         display: block;
-        padding: 10px;
-        background-color: rgb(54, 56, 66);
+
+
       }
 
-      .fileUpload {
-        display: inline-flex;
-      }
-
-      paper-dialog {
-        width: 75%;
-        min-width: 50vw;
-      }
-
-      .fixed {
-        width: 75%;
-        min-width: 50vw;
+      .bg {
+        background-image: url("../images/granites.jpg")  ;
+        height: 1000px;
+       padding: 0%;
+        margin: 0%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
       }
     </style>
-    <script>
-      class MediaCreator extends Polymer.Element {
-        static get is() {
-          return 'media-creator';
-        }
-        static get properties() {
-          return {
-            prop1: {
-              type: String,
-              value: "Media Creator",
-              notify: true,
-              
-            }
+
+
+    <div class="bg"></div>
+
+
+  </template>
+
+  <script>
+    class MainDashboard extends Polymer.Element {
+      static get is() {
+        return 'main-dashboard';
+      }
+      static get properties() {
+        return {
+          hide: {
+            type: Boolean,
+            value: false,
+            notify: true
           }
-        }
+        };
       }
 
-      window.customElements.define(MediaCreator.is, MediaCreator);
-    </script>
+    }
+
+    window.customElements.define(MainDashboard.is, MainDashboard);
+  </script>
 </dom-module>

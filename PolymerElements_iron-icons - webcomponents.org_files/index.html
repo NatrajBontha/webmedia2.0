@@ -1,0 +1,5536 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/demo/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+  <title>iron-icons demo</title>
+  <script src="./webcomponents-lite.js.download"></script>
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/paper-styles/demo-pages.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/paper-styles/color.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-meta/iron-meta.html">
+
+  <!-- load default iconset -->
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/iron-icons.html">
+
+  <!-- load the rest -->
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/av-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/communication-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/device-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/editor-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/hardware-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/image-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/maps-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/notification-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/social-icons.html">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/iron-icons/v2.1.1/iron-icons/places-icons.html">
+<style>[hidden] { display: none !important; }</style><custom-style>
+  <style is="custom-style">html {
+  --google-red-100: #f4c7c3;
+      --google-red-300: #e67c73;
+      --google-red-500: #db4437;
+      --google-red-700: #c53929;
+
+      --google-blue-100: #c6dafc;
+      --google-blue-300: #7baaf7;
+      --google-blue-500: #4285f4;
+      --google-blue-700: #3367d6;
+
+      --google-green-100: #b7e1cd;
+      --google-green-300: #57bb8a;
+      --google-green-500: #0f9d58;
+      --google-green-700: #0b8043;
+
+      --google-yellow-100: #fce8b2;
+      --google-yellow-300: #f7cb4d;
+      --google-yellow-500: #f4b400;
+      --google-yellow-700: #f09300;
+
+      --google-grey-100: #f5f5f5;
+      --google-grey-300: #e0e0e0;
+      --google-grey-500: #9e9e9e;
+      --google-grey-700: #616161;
+
+      
+
+      --paper-red-50: #ffebee;
+      --paper-red-100: #ffcdd2;
+      --paper-red-200: #ef9a9a;
+      --paper-red-300: #e57373;
+      --paper-red-400: #ef5350;
+      --paper-red-500: #f44336;
+      --paper-red-600: #e53935;
+      --paper-red-700: #d32f2f;
+      --paper-red-800: #c62828;
+      --paper-red-900: #b71c1c;
+      --paper-red-a100: #ff8a80;
+      --paper-red-a200: #ff5252;
+      --paper-red-a400: #ff1744;
+      --paper-red-a700: #d50000;
+
+      --paper-pink-50: #fce4ec;
+      --paper-pink-100: #f8bbd0;
+      --paper-pink-200: #f48fb1;
+      --paper-pink-300: #f06292;
+      --paper-pink-400: #ec407a;
+      --paper-pink-500: #e91e63;
+      --paper-pink-600: #d81b60;
+      --paper-pink-700: #c2185b;
+      --paper-pink-800: #ad1457;
+      --paper-pink-900: #880e4f;
+      --paper-pink-a100: #ff80ab;
+      --paper-pink-a200: #ff4081;
+      --paper-pink-a400: #f50057;
+      --paper-pink-a700: #c51162;
+
+      --paper-purple-50: #f3e5f5;
+      --paper-purple-100: #e1bee7;
+      --paper-purple-200: #ce93d8;
+      --paper-purple-300: #ba68c8;
+      --paper-purple-400: #ab47bc;
+      --paper-purple-500: #9c27b0;
+      --paper-purple-600: #8e24aa;
+      --paper-purple-700: #7b1fa2;
+      --paper-purple-800: #6a1b9a;
+      --paper-purple-900: #4a148c;
+      --paper-purple-a100: #ea80fc;
+      --paper-purple-a200: #e040fb;
+      --paper-purple-a400: #d500f9;
+      --paper-purple-a700: #aa00ff;
+
+      --paper-deep-purple-50: #ede7f6;
+      --paper-deep-purple-100: #d1c4e9;
+      --paper-deep-purple-200: #b39ddb;
+      --paper-deep-purple-300: #9575cd;
+      --paper-deep-purple-400: #7e57c2;
+      --paper-deep-purple-500: #673ab7;
+      --paper-deep-purple-600: #5e35b1;
+      --paper-deep-purple-700: #512da8;
+      --paper-deep-purple-800: #4527a0;
+      --paper-deep-purple-900: #311b92;
+      --paper-deep-purple-a100: #b388ff;
+      --paper-deep-purple-a200: #7c4dff;
+      --paper-deep-purple-a400: #651fff;
+      --paper-deep-purple-a700: #6200ea;
+
+      --paper-indigo-50: #e8eaf6;
+      --paper-indigo-100: #c5cae9;
+      --paper-indigo-200: #9fa8da;
+      --paper-indigo-300: #7986cb;
+      --paper-indigo-400: #5c6bc0;
+      --paper-indigo-500: #3f51b5;
+      --paper-indigo-600: #3949ab;
+      --paper-indigo-700: #303f9f;
+      --paper-indigo-800: #283593;
+      --paper-indigo-900: #1a237e;
+      --paper-indigo-a100: #8c9eff;
+      --paper-indigo-a200: #536dfe;
+      --paper-indigo-a400: #3d5afe;
+      --paper-indigo-a700: #304ffe;
+
+      --paper-blue-50: #e3f2fd;
+      --paper-blue-100: #bbdefb;
+      --paper-blue-200: #90caf9;
+      --paper-blue-300: #64b5f6;
+      --paper-blue-400: #42a5f5;
+      --paper-blue-500: #2196f3;
+      --paper-blue-600: #1e88e5;
+      --paper-blue-700: #1976d2;
+      --paper-blue-800: #1565c0;
+      --paper-blue-900: #0d47a1;
+      --paper-blue-a100: #82b1ff;
+      --paper-blue-a200: #448aff;
+      --paper-blue-a400: #2979ff;
+      --paper-blue-a700: #2962ff;
+
+      --paper-light-blue-50: #e1f5fe;
+      --paper-light-blue-100: #b3e5fc;
+      --paper-light-blue-200: #81d4fa;
+      --paper-light-blue-300: #4fc3f7;
+      --paper-light-blue-400: #29b6f6;
+      --paper-light-blue-500: #03a9f4;
+      --paper-light-blue-600: #039be5;
+      --paper-light-blue-700: #0288d1;
+      --paper-light-blue-800: #0277bd;
+      --paper-light-blue-900: #01579b;
+      --paper-light-blue-a100: #80d8ff;
+      --paper-light-blue-a200: #40c4ff;
+      --paper-light-blue-a400: #00b0ff;
+      --paper-light-blue-a700: #0091ea;
+
+      --paper-cyan-50: #e0f7fa;
+      --paper-cyan-100: #b2ebf2;
+      --paper-cyan-200: #80deea;
+      --paper-cyan-300: #4dd0e1;
+      --paper-cyan-400: #26c6da;
+      --paper-cyan-500: #00bcd4;
+      --paper-cyan-600: #00acc1;
+      --paper-cyan-700: #0097a7;
+      --paper-cyan-800: #00838f;
+      --paper-cyan-900: #006064;
+      --paper-cyan-a100: #84ffff;
+      --paper-cyan-a200: #18ffff;
+      --paper-cyan-a400: #00e5ff;
+      --paper-cyan-a700: #00b8d4;
+
+      --paper-teal-50: #e0f2f1;
+      --paper-teal-100: #b2dfdb;
+      --paper-teal-200: #80cbc4;
+      --paper-teal-300: #4db6ac;
+      --paper-teal-400: #26a69a;
+      --paper-teal-500: #009688;
+      --paper-teal-600: #00897b;
+      --paper-teal-700: #00796b;
+      --paper-teal-800: #00695c;
+      --paper-teal-900: #004d40;
+      --paper-teal-a100: #a7ffeb;
+      --paper-teal-a200: #64ffda;
+      --paper-teal-a400: #1de9b6;
+      --paper-teal-a700: #00bfa5;
+
+      --paper-green-50: #e8f5e9;
+      --paper-green-100: #c8e6c9;
+      --paper-green-200: #a5d6a7;
+      --paper-green-300: #81c784;
+      --paper-green-400: #66bb6a;
+      --paper-green-500: #4caf50;
+      --paper-green-600: #43a047;
+      --paper-green-700: #388e3c;
+      --paper-green-800: #2e7d32;
+      --paper-green-900: #1b5e20;
+      --paper-green-a100: #b9f6ca;
+      --paper-green-a200: #69f0ae;
+      --paper-green-a400: #00e676;
+      --paper-green-a700: #00c853;
+
+      --paper-light-green-50: #f1f8e9;
+      --paper-light-green-100: #dcedc8;
+      --paper-light-green-200: #c5e1a5;
+      --paper-light-green-300: #aed581;
+      --paper-light-green-400: #9ccc65;
+      --paper-light-green-500: #8bc34a;
+      --paper-light-green-600: #7cb342;
+      --paper-light-green-700: #689f38;
+      --paper-light-green-800: #558b2f;
+      --paper-light-green-900: #33691e;
+      --paper-light-green-a100: #ccff90;
+      --paper-light-green-a200: #b2ff59;
+      --paper-light-green-a400: #76ff03;
+      --paper-light-green-a700: #64dd17;
+
+      --paper-lime-50: #f9fbe7;
+      --paper-lime-100: #f0f4c3;
+      --paper-lime-200: #e6ee9c;
+      --paper-lime-300: #dce775;
+      --paper-lime-400: #d4e157;
+      --paper-lime-500: #cddc39;
+      --paper-lime-600: #c0ca33;
+      --paper-lime-700: #afb42b;
+      --paper-lime-800: #9e9d24;
+      --paper-lime-900: #827717;
+      --paper-lime-a100: #f4ff81;
+      --paper-lime-a200: #eeff41;
+      --paper-lime-a400: #c6ff00;
+      --paper-lime-a700: #aeea00;
+
+      --paper-yellow-50: #fffde7;
+      --paper-yellow-100: #fff9c4;
+      --paper-yellow-200: #fff59d;
+      --paper-yellow-300: #fff176;
+      --paper-yellow-400: #ffee58;
+      --paper-yellow-500: #ffeb3b;
+      --paper-yellow-600: #fdd835;
+      --paper-yellow-700: #fbc02d;
+      --paper-yellow-800: #f9a825;
+      --paper-yellow-900: #f57f17;
+      --paper-yellow-a100: #ffff8d;
+      --paper-yellow-a200: #ffff00;
+      --paper-yellow-a400: #ffea00;
+      --paper-yellow-a700: #ffd600;
+
+      --paper-amber-50: #fff8e1;
+      --paper-amber-100: #ffecb3;
+      --paper-amber-200: #ffe082;
+      --paper-amber-300: #ffd54f;
+      --paper-amber-400: #ffca28;
+      --paper-amber-500: #ffc107;
+      --paper-amber-600: #ffb300;
+      --paper-amber-700: #ffa000;
+      --paper-amber-800: #ff8f00;
+      --paper-amber-900: #ff6f00;
+      --paper-amber-a100: #ffe57f;
+      --paper-amber-a200: #ffd740;
+      --paper-amber-a400: #ffc400;
+      --paper-amber-a700: #ffab00;
+
+      --paper-orange-50: #fff3e0;
+      --paper-orange-100: #ffe0b2;
+      --paper-orange-200: #ffcc80;
+      --paper-orange-300: #ffb74d;
+      --paper-orange-400: #ffa726;
+      --paper-orange-500: #ff9800;
+      --paper-orange-600: #fb8c00;
+      --paper-orange-700: #f57c00;
+      --paper-orange-800: #ef6c00;
+      --paper-orange-900: #e65100;
+      --paper-orange-a100: #ffd180;
+      --paper-orange-a200: #ffab40;
+      --paper-orange-a400: #ff9100;
+      --paper-orange-a700: #ff6500;
+
+      --paper-deep-orange-50: #fbe9e7;
+      --paper-deep-orange-100: #ffccbc;
+      --paper-deep-orange-200: #ffab91;
+      --paper-deep-orange-300: #ff8a65;
+      --paper-deep-orange-400: #ff7043;
+      --paper-deep-orange-500: #ff5722;
+      --paper-deep-orange-600: #f4511e;
+      --paper-deep-orange-700: #e64a19;
+      --paper-deep-orange-800: #d84315;
+      --paper-deep-orange-900: #bf360c;
+      --paper-deep-orange-a100: #ff9e80;
+      --paper-deep-orange-a200: #ff6e40;
+      --paper-deep-orange-a400: #ff3d00;
+      --paper-deep-orange-a700: #dd2c00;
+
+      --paper-brown-50: #efebe9;
+      --paper-brown-100: #d7ccc8;
+      --paper-brown-200: #bcaaa4;
+      --paper-brown-300: #a1887f;
+      --paper-brown-400: #8d6e63;
+      --paper-brown-500: #795548;
+      --paper-brown-600: #6d4c41;
+      --paper-brown-700: #5d4037;
+      --paper-brown-800: #4e342e;
+      --paper-brown-900: #3e2723;
+
+      --paper-grey-50: #fafafa;
+      --paper-grey-100: #f5f5f5;
+      --paper-grey-200: #eeeeee;
+      --paper-grey-300: #e0e0e0;
+      --paper-grey-400: #bdbdbd;
+      --paper-grey-500: #9e9e9e;
+      --paper-grey-600: #757575;
+      --paper-grey-700: #616161;
+      --paper-grey-800: #424242;
+      --paper-grey-900: #212121;
+
+      --paper-blue-grey-50: #eceff1;
+      --paper-blue-grey-100: #cfd8dc;
+      --paper-blue-grey-200: #b0bec5;
+      --paper-blue-grey-300: #90a4ae;
+      --paper-blue-grey-400: #78909c;
+      --paper-blue-grey-500: #607d8b;
+      --paper-blue-grey-600: #546e7a;
+      --paper-blue-grey-700: #455a64;
+      --paper-blue-grey-800: #37474f;
+      --paper-blue-grey-900: #263238;
+
+      
+      --dark-divider-opacity: 0.12;
+      --dark-disabled-opacity: 0.38; 
+      --dark-secondary-opacity: 0.54;
+      --dark-primary-opacity: 0.87;
+
+      
+      --light-divider-opacity: 0.12;
+      --light-disabled-opacity: 0.3; 
+      --light-secondary-opacity: 0.7;
+      --light-primary-opacity: 1.0;
+}
+
+</style>
+</custom-style><custom-style>
+  <style is="custom-style">html {
+  --paper-font-common-base_-_font-family:  'Roboto', 'Noto', sans-serif; --paper-font-common-base_-_-webkit-font-smoothing:  antialiased;;
+
+      --paper-font-common-code_-_font-family:  'Roboto Mono', 'Consolas', 'Menlo', monospace; --paper-font-common-code_-_-webkit-font-smoothing:  antialiased;;
+
+      --paper-font-common-expensive-kerning_-_text-rendering:  optimizeLegibility;;
+
+      --paper-font-common-nowrap_-_white-space:  nowrap; --paper-font-common-nowrap_-_overflow:  hidden; --paper-font-common-nowrap_-_text-overflow:  ellipsis;;
+
+      
+
+      --paper-font-display4_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-display4_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-display4_-_white-space:  var(--paper-font-common-nowrap_-_white-space); --paper-font-display4_-_overflow:  var(--paper-font-common-nowrap_-_overflow); --paper-font-display4_-_text-overflow:  var(--paper-font-common-nowrap_-_text-overflow); --paper-font-display4_-_font-size:  112px; --paper-font-display4_-_font-weight:  300; --paper-font-display4_-_letter-spacing:  -.044em; --paper-font-display4_-_line-height:  120px;;
+
+      --paper-font-display3_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-display3_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-display3_-_white-space:  var(--paper-font-common-nowrap_-_white-space); --paper-font-display3_-_overflow:  var(--paper-font-common-nowrap_-_overflow); --paper-font-display3_-_text-overflow:  var(--paper-font-common-nowrap_-_text-overflow); --paper-font-display3_-_font-size:  56px; --paper-font-display3_-_font-weight:  400; --paper-font-display3_-_letter-spacing:  -.026em; --paper-font-display3_-_line-height:  60px;;
+
+      --paper-font-display2_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-display2_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-display2_-_font-size:  45px; --paper-font-display2_-_font-weight:  400; --paper-font-display2_-_letter-spacing:  -.018em; --paper-font-display2_-_line-height:  48px;;
+
+      --paper-font-display1_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-display1_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-display1_-_font-size:  34px; --paper-font-display1_-_font-weight:  400; --paper-font-display1_-_letter-spacing:  -.01em; --paper-font-display1_-_line-height:  40px;;
+
+      --paper-font-headline_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-headline_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-headline_-_font-size:  24px; --paper-font-headline_-_font-weight:  400; --paper-font-headline_-_letter-spacing:  -.012em; --paper-font-headline_-_line-height:  32px;;
+
+      --paper-font-title_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-title_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-title_-_white-space:  var(--paper-font-common-nowrap_-_white-space); --paper-font-title_-_overflow:  var(--paper-font-common-nowrap_-_overflow); --paper-font-title_-_text-overflow:  var(--paper-font-common-nowrap_-_text-overflow); --paper-font-title_-_font-size:  20px; --paper-font-title_-_font-weight:  500; --paper-font-title_-_line-height:  28px;;
+
+      --paper-font-subhead_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-subhead_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-subhead_-_font-size:  16px; --paper-font-subhead_-_font-weight:  400; --paper-font-subhead_-_line-height:  24px;;
+
+      --paper-font-body2_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-body2_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-body2_-_font-size:  14px; --paper-font-body2_-_font-weight:  500; --paper-font-body2_-_line-height:  24px;;
+
+      --paper-font-body1_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-body1_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-body1_-_font-size:  14px; --paper-font-body1_-_font-weight:  400; --paper-font-body1_-_line-height:  20px;;
+
+      --paper-font-caption_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-caption_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-caption_-_white-space:  var(--paper-font-common-nowrap_-_white-space); --paper-font-caption_-_overflow:  var(--paper-font-common-nowrap_-_overflow); --paper-font-caption_-_text-overflow:  var(--paper-font-common-nowrap_-_text-overflow); --paper-font-caption_-_font-size:  12px; --paper-font-caption_-_font-weight:  400; --paper-font-caption_-_letter-spacing:  0.011em; --paper-font-caption_-_line-height:  20px;;
+
+      --paper-font-menu_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-menu_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-menu_-_white-space:  var(--paper-font-common-nowrap_-_white-space); --paper-font-menu_-_overflow:  var(--paper-font-common-nowrap_-_overflow); --paper-font-menu_-_text-overflow:  var(--paper-font-common-nowrap_-_text-overflow); --paper-font-menu_-_font-size:  13px; --paper-font-menu_-_font-weight:  500; --paper-font-menu_-_line-height:  24px;;
+
+      --paper-font-button_-_font-family:  var(--paper-font-common-base_-_font-family); --paper-font-button_-_-webkit-font-smoothing:  var(--paper-font-common-base_-_-webkit-font-smoothing); --paper-font-button_-_white-space:  var(--paper-font-common-nowrap_-_white-space); --paper-font-button_-_overflow:  var(--paper-font-common-nowrap_-_overflow); --paper-font-button_-_text-overflow:  var(--paper-font-common-nowrap_-_text-overflow); --paper-font-button_-_font-size:  14px; --paper-font-button_-_font-weight:  500; --paper-font-button_-_letter-spacing:  0.018em; --paper-font-button_-_line-height:  24px; --paper-font-button_-_text-transform:  uppercase;;
+
+      --paper-font-code2_-_font-family:  var(--paper-font-common-code_-_font-family); --paper-font-code2_-_-webkit-font-smoothing:  var(--paper-font-common-code_-_-webkit-font-smoothing); --paper-font-code2_-_font-size:  14px; --paper-font-code2_-_font-weight:  700; --paper-font-code2_-_line-height:  20px;;
+
+      --paper-font-code1_-_font-family:  var(--paper-font-common-code_-_font-family); --paper-font-code1_-_-webkit-font-smoothing:  var(--paper-font-common-code_-_-webkit-font-smoothing); --paper-font-code1_-_font-size:  14px; --paper-font-code1_-_font-weight:  500; --paper-font-code1_-_line-height:  20px;;
+}
+
+</style>
+</custom-style><custom-style>
+  <style is="custom-style">html {
+  --shadow-transition_-_transition:  box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);;
+
+      --shadow-none_-_box-shadow:  none;;
+
+      
+
+      --shadow-elevation-2dp_-_box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 1px -2px rgba(0, 0, 0, 0.2);;
+
+      --shadow-elevation-3dp_-_box-shadow:  0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 3px -2px rgba(0, 0, 0, 0.4);;
+
+      --shadow-elevation-4dp_-_box-shadow:  0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.4);;
+
+      --shadow-elevation-6dp_-_box-shadow:  0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 5px -1px rgba(0, 0, 0, 0.4);;
+
+      --shadow-elevation-8dp_-_box-shadow:  0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                    0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                    0 5px 5px -3px rgba(0, 0, 0, 0.4);;
+
+      --shadow-elevation-12dp_-_box-shadow:  0 12px 16px 1px rgba(0, 0, 0, 0.14),
+                    0 4px 22px 3px rgba(0, 0, 0, 0.12),
+                    0 6px 7px -4px rgba(0, 0, 0, 0.4);;
+
+      --shadow-elevation-16dp_-_box-shadow:  0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                    0  6px 30px 5px rgba(0, 0, 0, 0.12),
+                    0  8px 10px -5px rgba(0, 0, 0, 0.4);;
+
+      --shadow-elevation-24dp_-_box-shadow:  0 24px 38px 3px rgba(0, 0, 0, 0.14),
+                    0 9px 46px 8px rgba(0, 0, 0, 0.12),
+                    0 11px 15px -7px rgba(0, 0, 0, 0.4);;
+}
+
+</style>
+</custom-style><custom-style>
+  <style is="custom-style">body {
+  font-family: var(--paper-font-common-base_-_font-family); -webkit-font-smoothing: var(--paper-font-common-base_-_-webkit-font-smoothing);
+      font-size: 14px;
+      margin: 0;
+      padding: 24px;
+      background-color: var(--paper-grey-50);
+}
+
+.horizontal-section-container {
+  display: var(--layout-horizontal_-_display); -ms-flex-direction: var(--layout-horizontal_-_-ms-flex-direction); -webkit-flex-direction: var(--layout-horizontal_-_-webkit-flex-direction); flex-direction: var(--layout-horizontal_-_flex-direction);
+      -ms-flex-pack: var(--layout-center-justified_-_-ms-flex-pack); -webkit-justify-content: var(--layout-center-justified_-_-webkit-justify-content); justify-content: var(--layout-center-justified_-_justify-content);
+      -ms-flex-wrap: var(--layout-wrap_-_-ms-flex-wrap); -webkit-flex-wrap: var(--layout-wrap_-_-webkit-flex-wrap); flex-wrap: var(--layout-wrap_-_flex-wrap);
+}
+
+.vertical-section-container {
+  display: var(--layout-vertical_-_display); -ms-flex-direction: var(--layout-vertical_-_-ms-flex-direction); -webkit-flex-direction: var(--layout-vertical_-_-webkit-flex-direction); flex-direction: var(--layout-vertical_-_flex-direction);
+      ;
+}
+
+.horizontal-section {
+  background-color: white;
+      padding: 24px;
+      margin-right: 24px;
+      min-width: 200px;
+
+      box-shadow: var(--shadow-elevation-2dp_-_box-shadow);
+}
+
+.vertical-section {
+  background-color: white;
+      padding: 24px;
+      margin: 0 24px 24px 24px;
+
+      box-shadow: var(--shadow-elevation-2dp_-_box-shadow);
+}
+
+.centered {
+  max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+code {
+  color: var(--google-grey-700);
+}
+
+body > div.layout.horizontal.center-justified {
+  -ms-flex-wrap: var(--layout-wrap_-_-ms-flex-wrap); -webkit-flex-wrap: var(--layout-wrap_-_-webkit-flex-wrap); flex-wrap: var(--layout-wrap_-_flex-wrap);
+}
+
+</style>
+</custom-style><custom-style>
+  <style is="custom-style">[hidden] {
+  display: none !important;
+}
+
+</style>
+</custom-style><custom-style>
+  <style is="custom-style">html {
+  --layout_-_display:  flex;;
+
+      --layout-inline_-_display:  inline-flex;;
+
+      --layout-horizontal_-_display:  var(--layout_-_display); --layout-horizontal_-_-ms-flex-direction:  row; --layout-horizontal_-_-webkit-flex-direction:  row; --layout-horizontal_-_flex-direction:  row;;
+
+      --layout-horizontal-reverse_-_display:  var(--layout_-_display); --layout-horizontal-reverse_-_-ms-flex-direction:  row-reverse; --layout-horizontal-reverse_-_-webkit-flex-direction:  row-reverse; --layout-horizontal-reverse_-_flex-direction:  row-reverse;;
+
+      --layout-vertical_-_display:  var(--layout_-_display); --layout-vertical_-_-ms-flex-direction:  column; --layout-vertical_-_-webkit-flex-direction:  column; --layout-vertical_-_flex-direction:  column;;
+
+      --layout-vertical-reverse_-_display:  var(--layout_-_display); --layout-vertical-reverse_-_-ms-flex-direction:  column-reverse; --layout-vertical-reverse_-_-webkit-flex-direction:  column-reverse; --layout-vertical-reverse_-_flex-direction:  column-reverse;;
+
+      --layout-wrap_-_-ms-flex-wrap:  wrap; --layout-wrap_-_-webkit-flex-wrap:  wrap; --layout-wrap_-_flex-wrap:  wrap;;
+
+      --layout-wrap-reverse_-_-ms-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_-webkit-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_flex-wrap:  wrap-reverse;;
+
+      --layout-flex-auto_-_-ms-flex:  1 1 auto; --layout-flex-auto_-_-webkit-flex:  1 1 auto; --layout-flex-auto_-_flex:  1 1 auto;;
+
+      --layout-flex-none_-_-ms-flex:  none; --layout-flex-none_-_-webkit-flex:  none; --layout-flex-none_-_flex:  none;;
+
+      --layout-flex_-_-ms-flex:  1 1 0.000000001px; --layout-flex_-_-webkit-flex:  1; --layout-flex_-_flex:  1; --layout-flex_-_-webkit-flex-basis:  0.000000001px; --layout-flex_-_flex-basis:  0.000000001px;;
+
+      --layout-flex-2_-_-ms-flex:  2; --layout-flex-2_-_-webkit-flex:  2; --layout-flex-2_-_flex:  2;;
+
+      --layout-flex-3_-_-ms-flex:  3; --layout-flex-3_-_-webkit-flex:  3; --layout-flex-3_-_flex:  3;;
+
+      --layout-flex-4_-_-ms-flex:  4; --layout-flex-4_-_-webkit-flex:  4; --layout-flex-4_-_flex:  4;;
+
+      --layout-flex-5_-_-ms-flex:  5; --layout-flex-5_-_-webkit-flex:  5; --layout-flex-5_-_flex:  5;;
+
+      --layout-flex-6_-_-ms-flex:  6; --layout-flex-6_-_-webkit-flex:  6; --layout-flex-6_-_flex:  6;;
+
+      --layout-flex-7_-_-ms-flex:  7; --layout-flex-7_-_-webkit-flex:  7; --layout-flex-7_-_flex:  7;;
+
+      --layout-flex-8_-_-ms-flex:  8; --layout-flex-8_-_-webkit-flex:  8; --layout-flex-8_-_flex:  8;;
+
+      --layout-flex-9_-_-ms-flex:  9; --layout-flex-9_-_-webkit-flex:  9; --layout-flex-9_-_flex:  9;;
+
+      --layout-flex-10_-_-ms-flex:  10; --layout-flex-10_-_-webkit-flex:  10; --layout-flex-10_-_flex:  10;;
+
+      --layout-flex-11_-_-ms-flex:  11; --layout-flex-11_-_-webkit-flex:  11; --layout-flex-11_-_flex:  11;;
+
+      --layout-flex-12_-_-ms-flex:  12; --layout-flex-12_-_-webkit-flex:  12; --layout-flex-12_-_flex:  12;;
+
+      
+
+      --layout-start_-_-ms-flex-align:  start; --layout-start_-_-webkit-align-items:  flex-start; --layout-start_-_align-items:  flex-start;;
+
+      --layout-center_-_-ms-flex-align:  center; --layout-center_-_-webkit-align-items:  center; --layout-center_-_align-items:  center;;
+
+      --layout-end_-_-ms-flex-align:  end; --layout-end_-_-webkit-align-items:  flex-end; --layout-end_-_align-items:  flex-end;;
+
+      --layout-baseline_-_-ms-flex-align:  baseline; --layout-baseline_-_-webkit-align-items:  baseline; --layout-baseline_-_align-items:  baseline;;
+
+      
+
+      --layout-start-justified_-_-ms-flex-pack:  start; --layout-start-justified_-_-webkit-justify-content:  flex-start; --layout-start-justified_-_justify-content:  flex-start;;
+
+      --layout-center-justified_-_-ms-flex-pack:  center; --layout-center-justified_-_-webkit-justify-content:  center; --layout-center-justified_-_justify-content:  center;;
+
+      --layout-end-justified_-_-ms-flex-pack:  end; --layout-end-justified_-_-webkit-justify-content:  flex-end; --layout-end-justified_-_justify-content:  flex-end;;
+
+      --layout-around-justified_-_-ms-flex-pack:  distribute; --layout-around-justified_-_-webkit-justify-content:  space-around; --layout-around-justified_-_justify-content:  space-around;;
+
+      --layout-justified_-_-ms-flex-pack:  justify; --layout-justified_-_-webkit-justify-content:  space-between; --layout-justified_-_justify-content:  space-between;;
+
+      --layout-center-center_-_-ms-flex-align:  var(--layout-center_-_-ms-flex-align); --layout-center-center_-_-webkit-align-items:  var(--layout-center_-_-webkit-align-items); --layout-center-center_-_align-items:  var(--layout-center_-_align-items); --layout-center-center_-_-ms-flex-pack:  var(--layout-center-justified_-_-ms-flex-pack); --layout-center-center_-_-webkit-justify-content:  var(--layout-center-justified_-_-webkit-justify-content); --layout-center-center_-_justify-content:  var(--layout-center-justified_-_justify-content);;
+
+      
+
+      --layout-self-start_-_-ms-align-self:  flex-start; --layout-self-start_-_-webkit-align-self:  flex-start; --layout-self-start_-_align-self:  flex-start;;
+
+      --layout-self-center_-_-ms-align-self:  center; --layout-self-center_-_-webkit-align-self:  center; --layout-self-center_-_align-self:  center;;
+
+      --layout-self-end_-_-ms-align-self:  flex-end; --layout-self-end_-_-webkit-align-self:  flex-end; --layout-self-end_-_align-self:  flex-end;;
+
+      --layout-self-stretch_-_-ms-align-self:  stretch; --layout-self-stretch_-_-webkit-align-self:  stretch; --layout-self-stretch_-_align-self:  stretch;;
+
+      --layout-self-baseline_-_-ms-align-self:  baseline; --layout-self-baseline_-_-webkit-align-self:  baseline; --layout-self-baseline_-_align-self:  baseline;;
+
+      
+
+      --layout-start-aligned_-_-ms-flex-line-pack:  start; --layout-start-aligned_-_-ms-align-content:  flex-start; --layout-start-aligned_-_-webkit-align-content:  flex-start; --layout-start-aligned_-_align-content:  flex-start;;
+
+      --layout-end-aligned_-_-ms-flex-line-pack:  end; --layout-end-aligned_-_-ms-align-content:  flex-end; --layout-end-aligned_-_-webkit-align-content:  flex-end; --layout-end-aligned_-_align-content:  flex-end;;
+
+      --layout-center-aligned_-_-ms-flex-line-pack:  center; --layout-center-aligned_-_-ms-align-content:  center; --layout-center-aligned_-_-webkit-align-content:  center; --layout-center-aligned_-_align-content:  center;;
+
+      --layout-between-aligned_-_-ms-flex-line-pack:  justify; --layout-between-aligned_-_-ms-align-content:  space-between; --layout-between-aligned_-_-webkit-align-content:  space-between; --layout-between-aligned_-_align-content:  space-between;;
+
+      --layout-around-aligned_-_-ms-flex-line-pack:  distribute; --layout-around-aligned_-_-ms-align-content:  space-around; --layout-around-aligned_-_-webkit-align-content:  space-around; --layout-around-aligned_-_align-content:  space-around;;
+
+      
+
+      --layout-block_-_display:  block;;
+
+      --layout-invisible_-_visibility:  hidden !important;;
+
+      --layout-relative_-_position:  relative;;
+
+      --layout-fit_-_position:  absolute; --layout-fit_-_top:  0; --layout-fit_-_right:  0; --layout-fit_-_bottom:  0; --layout-fit_-_left:  0;;
+
+      --layout-scroll_-_-webkit-overflow-scrolling:  touch; --layout-scroll_-_overflow:  auto;;
+
+      --layout-fullbleed_-_margin:  0; --layout-fullbleed_-_height:  100vh;;
+
+      
+
+      --layout-fixed-top_-_position:  fixed; --layout-fixed-top_-_top:  0; --layout-fixed-top_-_left:  0; --layout-fixed-top_-_right:  0;;
+
+      --layout-fixed-right_-_position:  fixed; --layout-fixed-right_-_top:  0; --layout-fixed-right_-_right:  0; --layout-fixed-right_-_bottom:  0;;
+
+      --layout-fixed-bottom_-_position:  fixed; --layout-fixed-bottom_-_right:  0; --layout-fixed-bottom_-_bottom:  0; --layout-fixed-bottom_-_left:  0;;
+
+      --layout-fixed-left_-_position:  fixed; --layout-fixed-left_-_top:  0; --layout-fixed-left_-_bottom:  0; --layout-fixed-left_-_left:  0;;
+}
+
+</style>
+</custom-style></head>
+<body>
+  <custom-style>
+    <style is="custom-style">h2 {
+  text-transform: capitalize;
+}
+
+iron-icon {
+  transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+}
+
+iron-icon:hover {
+  fill: var(--google-yellow-700);
+}
+
+.set {
+  display: block;
+        text-align: center;
+        margin: auto;
+        padding: 1em 0;
+        border-bottom: 1px solid silver;
+}
+
+.set:last-of-type {
+  border-bottom: none;
+}
+
+.set:nth-of-type(4n-3) {
+  color: var(--paper-grey-700);
+}
+
+.set:nth-of-type(4n-2) {
+  color: var(--paper-pink-500);
+}
+
+.set:nth-of-type(4n-1) {
+  color: var(--google-green-500);
+}
+
+.set:nth-of-type(4n) {
+  color: var(--google-blue-500);
+}
+
+.container {
+  display: inline-block;
+        width: 10em;
+        margin: 1em 0.5em;
+        text-align: center;
+}
+
+.container > div {
+  margin-top: 0.5em;
+        color: black;
+        font-size: 10px;
+}
+
+</style>
+  </custom-style>
+
+  
+      
+        <h2>icons</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:3d-rotation</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:accessibility</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:accessible</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:account-balance</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:account-balance-wallet</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:account-box</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:account-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:add-alert</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:add-box</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:add-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:add-circle-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:add-shopping-cart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:alarm</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:alarm-add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:alarm-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:alarm-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:all-out</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:android</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:announcement</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:apps</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:archive</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:arrow-back</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:arrow-downward</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:arrow-drop-down</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:arrow-drop-down-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:arrow-drop-up</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:arrow-forward</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:arrow-upward</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:aspect-ratio</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:assessment</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:assignment</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:assignment-ind</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:assignment-late</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:assignment-return</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:assignment-returned</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:assignment-turned-in</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:attachment</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:autorenew</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:backspace</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:backup</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:block</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:book</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:bookmark</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:bookmark-border</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:bug-report</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:build</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cached</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:camera-enhance</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cancel</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:card-giftcard</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:card-membership</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:card-travel</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:change-history</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:check</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:check-box</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:check-box-outline-blank</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:check-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:chevron-left</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:chevron-right</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:chrome-reader-mode</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:class</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:clear</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:close</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cloud</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cloud-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cloud-done</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cloud-download</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cloud-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cloud-queue</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:cloud-upload</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:code</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:compare-arrows</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:content-copy</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:content-cut</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:content-paste</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:copyright</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:create</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:create-new-folder</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:credit-card</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:dashboard</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:date-range</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:delete</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:delete-forever</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:delete-sweep</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:description</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:dns</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:done</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:done-all</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:donut-large</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:donut-small</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:drafts</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:eject</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:error</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:error-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:euro-symbol</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:event</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:event-seat</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:exit-to-app</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:expand-less</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:expand-more</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:explore</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:extension</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:face</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:favorite</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:favorite-border</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:feedback</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:file-download</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:file-upload</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:filter-list</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:find-in-page</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:find-replace</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:fingerprint</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:first-page</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:flag</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:flight-land</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:flight-takeoff</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:flip-to-back</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:flip-to-front</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:folder</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:folder-open</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:folder-shared</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:font-download</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:forward</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:fullscreen</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:fullscreen-exit</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:g-translate</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:gavel</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:gesture</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:get-app</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:gif</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:grade</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:group-work</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:help</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:help-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:highlight-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:history</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:home</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:hourglass-empty</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:hourglass-full</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:http</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:https</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:important-devices</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:inbox</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:indeterminate-check-box</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:info</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:info-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:input</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:invert-colors</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:label</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:label-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:language</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:last-page</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:launch</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:lightbulb-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:line-style</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:line-weight</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:link</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:list</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:lock-open</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:lock-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:low-priority</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:loyalty</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:mail</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:markunread</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:markunread-mailbox</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:menu</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:more-horiz</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:more-vert</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:motorcycle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:move-to-inbox</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:next-week</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:note-add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:offline-pin</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:opacity</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:open-in-browser</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:open-in-new</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:open-with</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:pageview</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:pan-tool</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:payment</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-camera-mic</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-contact-calendar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-data-setting</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-device-information</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-identity</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-media</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-phone-msg</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:perm-scan-wifi</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:pets</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:picture-in-picture</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:picture-in-picture-alt</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:play-for-work</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:polymer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:power-settings-new</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:pregnant-woman</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:print</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:query-builder</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:question-answer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:radio-button-checked</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:radio-button-unchecked</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:receipt</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:record-voice-over</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:redeem</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:redo</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:refresh</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:remove</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:remove-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:remove-circle-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:remove-shopping-cart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:reorder</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:reply</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:reply-all</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:report</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:report-problem</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:restore</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:restore-page</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:room</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:rounded-corner</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:rowing</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:save</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:schedule</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:search</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:select-all</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:send</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-applications</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-backup-restore</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-bluetooth</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-brightness</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-cell</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-ethernet</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-input-antenna</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-input-component</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-input-composite</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-input-hdmi</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-input-svideo</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-overscan</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-phone</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-power</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-remote</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:settings-voice</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:shop</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:shop-two</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:shopping-basket</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:shopping-cart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:sort</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:speaker-notes</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:speaker-notes-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:spellcheck</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:star</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:star-border</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:star-half</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:stars</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:store</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:subdirectory-arrow-left</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:subdirectory-arrow-right</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:subject</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:supervisor-account</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:swap-horiz</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:swap-vert</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:swap-vertical-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:system-update-alt</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:tab</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:tab-unselected</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:text-format</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:theaters</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:thumb-down</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:thumb-up</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:thumbs-up-down</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:timeline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:toc</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:today</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:toll</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:touch-app</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:track-changes</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:translate</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:trending-down</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:trending-flat</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:trending-up</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:turned-in</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:turned-in-not</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:unarchive</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:undo</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:unfold-less</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:unfold-more</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:update</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:verified-user</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-agenda</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-array</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-carousel</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-column</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-day</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-headline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-list</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-module</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-quilt</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-stream</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:view-week</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:visibility</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:visibility-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:warning</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:watch-later</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:weekend</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:work</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:youtube-searched-for</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:zoom-in</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>icons:zoom-out</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>av</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:add-to-queue</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:airplay</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:album</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:art-track</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:av-timer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:branding-watermark</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:call-to-action</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:closed-caption</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:equalizer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:explicit</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:fast-forward</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:fast-rewind</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:featured-play-list</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:featured-video</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:fiber-dvr</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:fiber-manual-record</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:fiber-new</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:fiber-pin</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:fiber-smart-record</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:forward-10</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:forward-30</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:forward-5</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:games</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:hd</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:hearing</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:high-quality</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:library-add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:library-books</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:library-music</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:loop</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:mic</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:mic-none</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:mic-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:movie</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:music-video</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:new-releases</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:not-interested</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:note</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:pause</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:pause-circle-filled</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:pause-circle-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:play-arrow</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:play-circle-filled</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:play-circle-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:playlist-add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:playlist-add-check</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:playlist-play</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:queue</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:queue-music</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:queue-play-next</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:radio</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:recent-actors</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:remove-from-queue</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:repeat</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:repeat-one</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:replay</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:replay-10</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:replay-30</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:replay-5</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:shuffle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:skip-next</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:skip-previous</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:slow-motion-video</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:snooze</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:sort-by-alpha</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:stop</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:subscriptions</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:subtitles</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:surround-sound</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:video-call</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:video-label</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:video-library</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:videocam</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:videocam-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:volume-down</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:volume-mute</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:volume-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:volume-up</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:web</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>av:web-asset</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>communication</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:business</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call-end</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call-made</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call-merge</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call-missed</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call-missed-outgoing</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call-received</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:call-split</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:chat</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:chat-bubble</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:chat-bubble-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:clear-all</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:comment</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:contact-mail</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:contact-phone</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:contacts</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:dialer-sip</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:dialpad</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:email</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:forum</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:import-contacts</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:import-export</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:invert-colors-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:live-help</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:location-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:location-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:mail-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:message</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:no-sim</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:phone</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:phonelink-erase</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:phonelink-lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:phonelink-ring</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:phonelink-setup</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:portable-wifi-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:present-to-all</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:ring-volume</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:rss-feed</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:screen-share</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:speaker-phone</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:stay-current-landscape</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:stay-current-portrait</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:stay-primary-landscape</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:stay-primary-portrait</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:stop-screen-share</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:swap-calls</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:textsms</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:voicemail</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>communication:vpn-key</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>device</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:access-alarm</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:access-alarms</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:access-time</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:add-alarm</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:airplanemode-active</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:airplanemode-inactive</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-20</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-30</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-50</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-60</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-80</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-90</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-alert</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-charging-20</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-charging-30</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-charging-50</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-charging-60</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-charging-80</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-charging-90</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-charging-full</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-full</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-std</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:battery-unknown</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:bluetooth</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:bluetooth-connected</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:bluetooth-disabled</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:bluetooth-searching</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:brightness-auto</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:brightness-high</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:brightness-low</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:brightness-medium</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:data-usage</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:developer-mode</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:devices</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:dvr</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:gps-fixed</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:gps-not-fixed</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:gps-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:graphic-eq</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:location-disabled</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:location-searching</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:network-cell</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:network-wifi</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:nfc</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:screen-lock-landscape</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:screen-lock-portrait</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:screen-lock-rotation</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:screen-rotation</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:sd-storage</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:settings-system-daydream</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-0-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-1-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-2-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-3-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-4-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-connected-no-internet-0-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-connected-no-internet-1-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-connected-no-internet-2-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-connected-no-internet-3-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-connected-no-internet-4-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-no-sim</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-null</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-cellular-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-0-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-1-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-1-bar-lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-2-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-2-bar-lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-3-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-3-bar-lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-4-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-4-bar-lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:signal-wifi-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:storage</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:usb</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:wallpaper</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:widgets</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:wifi-lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>device:wifi-tethering</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>editor</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:attach-file</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:attach-money</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-all</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-bottom</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-clear</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-color</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-horizontal</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-inner</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-left</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-outer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-right</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-style</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-top</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:border-vertical</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:bubble-chart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:drag-handle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-align-center</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-align-justify</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-align-left</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-align-right</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-bold</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-clear</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-color-fill</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-color-reset</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-color-text</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-indent-decrease</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-indent-increase</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-italic</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-line-spacing</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-list-bulleted</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-list-numbered</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-paint</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-quote</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-shapes</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-size</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-strikethrough</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-textdirection-l-to-r</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-textdirection-r-to-l</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:format-underlined</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:functions</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:highlight</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:insert-chart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:insert-comment</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:insert-drive-file</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:insert-emoticon</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:insert-invitation</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:insert-link</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:insert-photo</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:linear-scale</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:merge-type</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:mode-comment</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:mode-edit</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:monetization-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:money-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:multiline-chart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:pie-chart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:pie-chart-outlined</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:publish</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:short-text</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:show-chart</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:space-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:strikethrough-s</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:text-fields</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:title</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:vertical-align-bottom</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:vertical-align-center</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:vertical-align-top</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>editor:wrap-text</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>hardware</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:cast</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:cast-connected</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:computer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:desktop-mac</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:desktop-windows</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:developer-board</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:device-hub</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:devices-other</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:dock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:gamepad</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:headset</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:headset-mic</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-arrow-down</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-arrow-left</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-arrow-right</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-arrow-up</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-backspace</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-capslock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-hide</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-return</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-tab</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:keyboard-voice</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:laptop</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:laptop-chromebook</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:laptop-mac</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:laptop-windows</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:memory</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:mouse</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:phone-android</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:phone-iphone</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:phonelink</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:phonelink-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:power-input</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:router</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:scanner</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:security</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:sim-card</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:smartphone</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:speaker</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:speaker-group</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:tablet</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:tablet-android</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:tablet-mac</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:toys</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:tv</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:videogame-asset</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>hardware:watch</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>image</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:add-a-photo</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:add-to-photos</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:adjust</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:assistant</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:assistant-photo</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:audiotrack</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:blur-circular</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:blur-linear</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:blur-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:blur-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brightness-1</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brightness-2</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brightness-3</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brightness-4</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brightness-5</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brightness-6</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brightness-7</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:broken-image</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:brush</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:burst-mode</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:camera</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:camera-alt</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:camera-front</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:camera-rear</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:camera-roll</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:center-focus-strong</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:center-focus-weak</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:collections</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:collections-bookmark</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:color-lens</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:colorize</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:compare</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:control-point</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:control-point-duplicate</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-16-9</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-3-2</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-5-4</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-7-5</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-din</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-free</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-landscape</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-original</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-portrait</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-rotate</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:crop-square</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:dehaze</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:details</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:edit</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:exposure</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:exposure-neg-1</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:exposure-neg-2</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:exposure-plus-1</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:exposure-plus-2</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:exposure-zero</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-1</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-2</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-3</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-4</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-5</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-6</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-7</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-8</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-9</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-9-plus</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-b-and-w</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-center-focus</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-drama</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-frames</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-hdr</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-none</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-tilt-shift</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:filter-vintage</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:flare</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:flash-auto</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:flash-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:flash-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:flip</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:gradient</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:grain</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:grid-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:grid-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:hdr-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:hdr-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:hdr-strong</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:hdr-weak</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:healing</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:image</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:image-aspect-ratio</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:iso</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:landscape</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:leak-add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:leak-remove</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:lens</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:linked-camera</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:looks</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:looks-3</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:looks-4</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:looks-5</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:looks-6</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:looks-one</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:looks-two</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:loupe</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:monochrome-photos</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:movie-creation</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:movie-filter</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:music-note</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:nature</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:nature-people</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:navigate-before</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:navigate-next</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:palette</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:panorama</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:panorama-fish-eye</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:panorama-horizontal</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:panorama-vertical</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:panorama-wide-angle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo-album</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo-camera</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo-filter</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo-library</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo-size-select-actual</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo-size-select-large</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:photo-size-select-small</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:picture-as-pdf</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:portrait</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:remove-red-eye</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:rotate-90-degrees-ccw</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:rotate-left</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:rotate-right</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:slideshow</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:straighten</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:style</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:switch-camera</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:switch-video</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:tag-faces</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:texture</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:timelapse</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:timer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:timer-10</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:timer-3</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:timer-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:tonality</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:transform</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:tune</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:view-comfy</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:view-compact</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:vignette</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:wb-auto</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:wb-cloudy</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:wb-incandescent</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:wb-iridescent</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>image:wb-sunny</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>maps</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:add-location</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:beenhere</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-bike</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-boat</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-bus</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-car</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-railway</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-run</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-subway</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-transit</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:directions-walk</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:edit-location</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:ev-station</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:flight</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:hotel</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:layers</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:layers-clear</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-activity</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-airport</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-atm</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-bar</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-cafe</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-car-wash</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-convenience-store</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-dining</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-drink</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-florist</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-gas-station</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-grocery-store</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-hospital</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-hotel</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-laundry-service</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-library</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-mall</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-movies</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-offer</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-parking</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-pharmacy</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-phone</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-pizza</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-play</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-post-office</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-printshop</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-see</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-shipping</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:local-taxi</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:map</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:my-location</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:navigation</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:near-me</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:person-pin</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:person-pin-circle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:pin-drop</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:place</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:rate-review</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:restaurant</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:restaurant-menu</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:satellite</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:store-mall-directory</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:streetview</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:subway</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:terrain</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:traffic</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:train</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:tram</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:transfer-within-a-station</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>maps:zoom-out-map</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>notification</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:adb</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-flat</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-flat-angled</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-individual-suite</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-legroom-extra</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-legroom-normal</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-legroom-reduced</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-recline-extra</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:airline-seat-recline-normal</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:bluetooth-audio</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:confirmation-number</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:disc-full</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:do-not-disturb</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:do-not-disturb-alt</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:do-not-disturb-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:do-not-disturb-on</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:drive-eta</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:enhanced-encryption</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:event-available</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:event-busy</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:event-note</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:folder-special</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:live-tv</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:mms</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:more</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:network-check</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:network-locked</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:no-encryption</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:ondemand-video</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:personal-video</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:phone-bluetooth-speaker</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:phone-forwarded</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:phone-in-talk</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:phone-locked</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:phone-missed</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:phone-paused</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:power</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:priority-high</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:rv-hookup</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:sd-card</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:sim-card-alert</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:sms</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:sms-failed</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:sync</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:sync-disabled</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:sync-problem</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:system-update</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:tap-and-play</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:time-to-leave</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:vibration</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:voice-chat</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:vpn-lock</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:wc</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>notification:wifi</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>social</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:cake</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:domain</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:group</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:group-add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:location-city</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:mood</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:mood-bad</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:notifications</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:notifications-active</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:notifications-none</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:notifications-off</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:notifications-paused</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:pages</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:party-mode</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:people</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:people-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:person</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:person-add</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:person-outline</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:plus-one</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:poll</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:public</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:school</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:sentiment-dissatisfied</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:sentiment-neutral</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:sentiment-satisfied</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:sentiment-very-dissatisfied</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:sentiment-very-satisfied</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:share</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>social:whatshot</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      
+        <h2>places</h2>
+        <div class="set">
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:ac-unit</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:airport-shuttle</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:all-inclusive</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:beach-access</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:business-center</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:casino</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:child-care</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:child-friendly</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:fitness-center</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:free-breakfast</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:golf-course</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:hot-tub</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:kitchen</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:pool</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:room-service</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:rv-hookup</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:smoke-free</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:smoking-rooms</div>
+            </span>
+          
+            <span class="container">
+              <iron-icon></iron-icon>
+              <div>places:spa</div>
+            </span>
+          <dom-repeat style="display: none;"><template></template></dom-repeat>
+        </div>
+      <dom-repeat id="iconsetRepeat" style="display: none;"><template></template></dom-repeat>
+    <dom-bind id="scope" style="display: none;">
+    <template is="dom-bind"></template>
+  </dom-bind>
+
+  <script>
+    window.addEventListener('WebComponentsReady', function() {
+      scope.getIconNames = function(iconset) {
+        return iconset.getIconNames();
+      };
+      scope.parentNode.getIconNames = scope.getIconNames;
+      iconsetRepeat.items = new Polymer.IronMeta({type: 'iconset'}).list;
+    });
+  </script>
+
+
+</body></html>

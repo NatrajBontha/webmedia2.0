@@ -1,0 +1,87 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+
+<dom-module id="file-list">
+
+    <template>
+        <style>
+            .container {
+                display: flex;
+                background-color: #38393E;
+                color: #84898D;
+                flex-direction: row;
+                justify-content: left;
+                /* align horizontal */
+                align-items: center;
+                /* align vertical */
+            }
+
+            .iconcenter {
+                background: rgb(87, 77, 79);
+            }
+
+            h1 {
+                color: antiquewhite;
+                font-size: 16px;
+                font-family: Calibri;
+            }
+
+            h2 {
+                color: #626266;
+                font-size: 12px;
+                font-family: Calibri;
+            }
+        </style>
+        <div class="container">
+            <div class="iconcenter">
+                <paper-icon-button icon="[[iconshow]]" style="color: antiquewhite; margin: 10px;" on-tap="handleTap" ></paper-icon-button>
+            </div>
+            <div style=" margin-left: 10px;">
+                <h1> [[title]]</h1>
+                <h2> [[subtitle]]</h2>
+            </div>
+
+        </div>
+    </template>
+
+    <script>
+        class Filelist extends Polymer.Element {
+            static get is() {
+                return 'file-list';
+            }
+
+            static get properties() {
+                return {
+
+                    title: {
+                        type: String,
+                        value: 'title'
+                    },
+
+                    subtitle: {
+                        type: String,
+                        value: 'subtitle'
+                    },
+
+                    iconshow: {
+                        type: String,
+                        value: 'add'
+
+                    }
+                }
+            }
+          
+
+      handleTap(e) {
+        console.log(e.target.id + ' was clicked.');
+        window.location.href = "./media-creator";
+      }
+
+        }
+        window.customElements.define(Filelist.is, Filelist);
+    </script>
+
+</dom-module>

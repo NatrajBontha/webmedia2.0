@@ -1,0 +1,100 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+
+<dom-module id="mrufiles-list">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                background-color: #38393E;
+                color: #84898D;
+            }
+
+            paper-listbox {
+                background-color: #38393E;
+            }
+
+            paper-item {
+                color: #CBCCD1;
+            }
+
+            h1 {
+                color: #CBCCD1;
+            }
+
+            .recentProjects {
+                @apply --layout-vertical;
+                @apply --layout-wrap;
+                @apply --layout-justified;
+                margin-left: 5%;
+                margin-top: 0px;
+            }
+        </style>
+        <div class="recentProjects">
+
+            <div>[[title]]</div>
+            <div>
+                <paper-listbox slot="dropdown-content" class="dropdown-content" attr-for-selected="value" fallback-selection="-1" selected="{{item.preMin}}">
+                    <template is="dom-repeat" items="[[mruFiles]]">
+                        <paper-item value="[[item]]">
+                            <paper-icon-button icon="[[plusicon]]" style="color: antiquewhite"></paper-icon-button>
+                            <paper-icon-button icon="[[foldericon]]" style="color: antiquewhite"></paper-icon-button>
+                            [[item]]
+                        </paper-item>
+                    </template>
+                </paper-listbox>
+            </div>
+            <div>
+
+            </div>
+
+    </template>
+
+    <script>
+        /**
+         * `mrufiles-list`
+         * 
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class MRUFilesList extends Polymer.Element {
+            static get is() {
+                return 'mrufiles-list';
+            }
+            static get properties() {
+                return {
+                    item: {
+                        type: Object
+                    },
+                    title: {
+                        type: String,
+                        value: 'Recent Projects'
+                    },
+                    foldericon: {
+                        type: String,
+                        value: 'icons:folder'
+                    },
+                    plusicon: {
+                        type: String,
+                        value: 'icons:add'
+                    },
+                    mruFiles: {
+                        type: Array,
+                        notify: true,
+                        value: ["Manhattan_Uptown_3_Routeladder", "GrandCentral_Station_Platform_TFT", "GrandCentral_Station2_Platform_TFT"],
+                        observer: '_updateMRUFiles'
+                    }
+                };
+            }
+            _updateMRUFiles(file) {
+                console.log("Update MRU List" + file)
+            }
+        }
+
+        window.customElements.define(MRUFilesList.is, MRUFilesList);
+    </script>
+</dom-module>
